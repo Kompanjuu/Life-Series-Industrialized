@@ -1,0 +1,9 @@
+To refresh this file, delete it and run /reload command again! Last updated: Aug 25, 2022 8:31:03 PM
+
+#forge:soulbound
+- ensorcellation:soulbound?
+- tombstone:soulbound?
+
+#forbidden_arcanus:indestructible_blacklisted
+- minecraft:unbreaking
+- minecraft:mending
