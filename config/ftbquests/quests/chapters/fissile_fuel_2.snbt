@@ -1,0 +1,258 @@
+{
+	id: "4091345B27E39220"
+	group: "2FB951217AFBB7A1"
+	order_index: 1
+	filename: "fissile_fuel_2"
+	title: "Fissile Fuel"
+	icon: "thermal:crude_oil_bucket"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Sulfur Dioxide"
+			icon: "mekanism:sulfur_dioxide_bucket"
+			x: -4.0d
+			y: -1.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: ["25446BCC853CE3C6"]
+			id: "471773DFD87EC990"
+			tasks: [{
+				id: "706865F2E1E2090E"
+				type: "checkmark"
+				title: "Sulfur Dioxide"
+			}]
+		}
+		{
+			title: "Sulfur Trioxide"
+			icon: "mekanism:sulfur_trioxide_bucket"
+			x: -2.0d
+			y: -1.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: [
+				"21C23C1F1961596E"
+				"471773DFD87EC990"
+				"4C28DD283233624A"
+			]
+			id: "73A17827DB9FF300"
+			tasks: [{
+				id: "1147C4147339426D"
+				type: "checkmark"
+				title: "Sulfur Trioxide"
+			}]
+		}
+		{
+			title: "Water Vapor"
+			icon: "bigreactors:steam_bucket"
+			x: 0.0d
+			y: 0.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: ["13EF0A8206C47693"]
+			id: "590948D3B103AE2D"
+			tasks: [{
+				id: "42E1078D3FA3ACD4"
+				type: "checkmark"
+				title: "Water Vapor"
+			}]
+		}
+		{
+			title: "Sulfuric Acid"
+			icon: "mekanism:sulfuric_acid_bucket"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: [
+				"73A17827DB9FF300"
+				"590948D3B103AE2D"
+				"4C28DD283233624A"
+			]
+			id: "5D7737017FE1B211"
+			tasks: [{
+				id: "212D552B0BB18F0F"
+				type: "checkmark"
+				title: "Sulfuric Acid"
+			}]
+		}
+		{
+			icon: "mekanism:hydrofluoric_acid_bucket"
+			x: 2.0d
+			y: -1.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: [
+				"5D7737017FE1B211"
+				"0D1B7F4426409A6A"
+				"364C62AC86AE0B03"
+			]
+			id: "36458D5AFE182B9D"
+			tasks: [{
+				id: "36C5DC41C6A6CE7E"
+				type: "checkmark"
+				title: "Hydrofluoric Acid"
+			}]
+		}
+		{
+			icon: "mekanism:uranium_hexafluoride_bucket"
+			x: 4.0d
+			y: -2.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: [
+				"36458D5AFE182B9D"
+				"7714F1070BCFCF7C"
+				"4C28DD283233624A"
+			]
+			id: "365F9B783E3AA47C"
+			tasks: [{
+				id: "2ADB3F0C13DF4300"
+				type: "checkmark"
+				title: "Uranium Hexafluoride"
+			}]
+		}
+		{
+			title: "Fissile Fuel"
+			icon: "thermal:crude_oil_bucket"
+			x: 6.0d
+			y: -2.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: [
+				"365F9B783E3AA47C"
+				"754390F3D8812A14"
+			]
+			id: "6593CFC1C251A848"
+			tasks: [{
+				id: "5CD5D032BBC84C33"
+				type: "checkmark"
+				title: "Fissile Fuel"
+			}]
+		}
+		{
+			title: "Uranium Oxide"
+			icon: "mekanism:uranium_oxide_bucket"
+			x: 2.0d
+			y: -3.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: [
+				"25446BCC853CE3C6"
+				"1FDC96A7FC41E9A4"
+			]
+			id: "7714F1070BCFCF7C"
+			tasks: [{
+				id: "4C66A8B04BC4AFF4"
+				type: "checkmark"
+				title: "Uranium Oxide"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			dependencies: ["5EAB3B4E860E6849"]
+			id: "1FDC96A7FC41E9A4"
+			tasks: [{
+				id: "0CDB454CE7934E63"
+				type: "item"
+				item: "mekanism:yellow_cake_uranium"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.5d
+			dependencies: ["7F387D217BC12521"]
+			id: "5EAB3B4E860E6849"
+			tasks: [{
+				id: "5A762FECE41E471F"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "754390F3D8812A14"
+			tasks: [{
+				id: "3D376FB6CAD71C85"
+				type: "item"
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: ["1EF27A52565313DD"]
+			id: "0D1B7F4426409A6A"
+			tasks: [{
+				id: "10B098254EAD6E4F"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["3B69D05DA3D84743"]
+			id: "13EF0A8206C47693"
+			tasks: [{
+				id: "21484097F8FE27D4"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			dependencies: ["2F872398E492D425"]
+			id: "25446BCC853CE3C6"
+			tasks: [{
+				id: "08FF8014F6F0DB24"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			dependencies: ["74C99AB3C22FEEFF"]
+			id: "4C28DD283233624A"
+			tasks: [{
+				id: "5332AA2EA82FB0E6"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+		}
+		{
+			title: "Oxygen"
+			icon: "mekanism:oxygen_bucket"
+			x: -2.0d
+			y: 0.5d
+			subtitle: "Gas = no item = no direct quest"
+			dependencies: ["70CFEFD6A7758BFA"]
+			id: "21C23C1F1961596E"
+			tasks: [{
+				id: "010C5B6F47678192"
+				type: "checkmark"
+				title: "Oxygen"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			dependencies: ["5E97639839BB2286"]
+			id: "70CFEFD6A7758BFA"
+			tasks: [{
+				id: "137BA02DA148BACA"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "364C62AC86AE0B03"
+			tasks: [{
+				id: "631EA4243C48F221"
+				type: "item"
+				item: "mekanism:fluorite_gem"
+			}]
+		}
+	]
+}

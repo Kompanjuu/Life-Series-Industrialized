@@ -1,0 +1,48 @@
+
+#World Stripper Config File
+[WorldStripper]
+
+	#Stripper Settings
+	[WorldStripper.Stripping]
+		#Amount of blocks to strip in on the x-axis
+		#Range: 0 ~ 320
+		blocks_to_strip_x = 48
+		#Amount of blocks to strip in on the z-axis
+		#Range: 0 ~ 320
+		blocks_to_strip_z = 48
+		#Toggles realtime world stripping / dressing
+		live_stripping = true
+		#Should bedrock be removed?
+		strip_bedrock = false
+		#Replaces every block touched by the stripper with this block
+		replacement_block = "minecraft:air"
+
+	#Stripper Profile Settings
+	[WorldStripper.Profiles]
+		#Selected profile
+		#Allowed Values: PROFILE_1, PROFILE_2, PROFILE_3, PROFILE_4, PROFILE_5
+		profile = "PROFILE_5"
+		#Profile 1 - A list of blocks to strip away from the world
+		profile_1 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass", "quark:marble", "chisel:marble/raw", "minecraft:clay", "chisel:limestone/raw", "quark:smooth_basalt", "quark:deepslate", "forbidden_arcanus:darkstone", "chisel:basalt/raw"]
+		#Profile 2 - A list of blocks to strip away from the world
+		profile_2 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass", "chisel:marble/raw", "mekanism:copper_ore", "minecraft:gold_ore", "mekanism:tin_ore", "immersiveengineering:ore_lead", "thermal:tin_ore", "minecraft:iron_ore", "minecraft:lapis_ore", "create:dolomite", "quark:smooth_basalt", "quark:deepslate", "immersiveengineering:ore_silver", "mekanism:fluorite_ore", "powah:uraninite_ore_poor", "appliedenergistics2:quartz_ore", "thermal:sulfur_ore", "create:zinc_ore", "minecraft:coal_ore", "compactores:compactore__minecraft__coal_ore", "compactores:compactore__minecraft__iron_ore", "appliedenergistics2:charged_quartz_ore", "mekanism:uranium_ore", "iceandfire:amythest_ore", "minecraft:clay", "forbidden_arcanus:petrified_root", "quark:stone_speleothem", "thermal:silver_ore", "mekanism:osmium_ore", "mekanism:lead_ore", "rftoolsbase:dimensionalshard_overworld", "quark:diorite_speleothem", "quark:root", "iceandfire:silver_ore", "powah:uraninite_ore", "minecraft:air", "thermal:lead_ore", "immersiveengineering:ore_nickel", "chisel:basalt/raw", "forbidden_arcanus:darkstone", "minecraft:redstone_ore", "iceandfire:copper_ore", "create:natural_scoria", "create:weathered_limestone", "immersiveengineering:ore_uranium", "powah:uraninite_ore_dense", "compactores:compactore__minecraft__redstone_ore", "compactores:compactore__minecraft__gold_ore", "quark:monster_box", "immersiveengineering:ore_copper", "tconstruct:copper_ore", "create:limestone", "thermal:niter_ore", "thermal:copper_ore", "create:copper_ore", "create:gabbro", "immersiveengineering:ore_aluminum", "thermal:nickel_ore", "thermal:cinnabar_ore", "compactores:compactore__minecraft__diamond_ore", "minecraft:obsidian", "quark:andesite_speleothem", "quark:granite_speleothem", "compactores:compactore__minecraft__lapis_ore", "chisel:limestone/raw", "biomesoplenty:desert_grass", "minecraft:poppy", "botania:purple_mushroom", "botania:pink_mushroom", "botania:black_mushroom", "botania:green_mushroom", "botania:white_mushroom", "botania:orange_mushroom", "botania:blue_mushroom", "botania:gray_mystical_flower", "minecraft:diamond_ore"]
+		#Profile 3 - A list of blocks to strip away from the world
+		profile_3 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass", "minecraft:obsidian", "minecraft:magma_block", "minecraft:iron_ore", "compactores:compactore__minecraft__iron_ore", "immersiveengineering:ore_uranium", "minecraft:coal_ore", "compactores:compactore__minecraft__coal_ore", "mekanism:uranium_ore", "powah:uraninite_ore", "immersiveengineering:ore_aluminum", "powah:uraninite_ore_poor", "thermal:tin_ore", "appliedenergistics2:quartz_ore", "minecraft:clay", "minecraft:air", "immersiveengineering:ore_lead", "compactores:compactore__minecraft__gold_ore", "minecraft:gold_ore", "mekanism:lead_ore", "thermal:silver_ore", "mekanism:copper_ore", "mekanism:osmium_ore", "create:zinc_ore", "tconstruct:copper_ore", "appliedenergistics2:charged_quartz_ore", "mekanism:tin_ore", "thermal:copper_ore", "immersiveengineering:ore_copper", "iceandfire:copper_ore", "create:copper_ore", "thermal:nickel_ore", "thermal:niter_ore", "quark:root", "quark:stone_speleothem", "immersiveengineering:ore_silver", "forbidden_arcanus:petrified_root", "compactores:compactore__minecraft__lapis_ore", "thermal:lead_ore", "mekanism:fluorite_ore", "forbidden_arcanus:xpetrified_ore", "thermal:cinnabar_ore", "iceandfire:silver_ore", "rftoolsbase:dimensionalshard_overworld", "forbidden_arcanus:dark_runestone", "minecraft:redstone_ore", "minecraft:diamond_ore", "immersiveengineering:ore_nickel", "compactores:compactore__minecraft__redstone_ore", "forbidden_arcanus:arcane_crystal_ore", "minecraft:lapis_ore", "powah:uraninite_ore_dense", "thermal:sulfur_ore", "forbidden_arcanus:runestone", "forbidden_arcanus:stella_arcanum", "quark:granite_speleothem", "quark:diorite_speleothem", "iceandfire:amythest_ore", "compactores:compactore__minecraft__diamond_ore", "quark:deepslate", "chisel:marble/raw", "quark:marble", "forbidden_arcanus:darkstone", "create:natural_scoria", "quark:smooth_basalt", "quark:andesite_speleothem", "forbidden_arcanus:arcane_gilded_darkstone", "quark:monster_box", "minecraft:cobblestone", "quark:cobbedstone", "minecraft:cobweb", "quark:marble_speleothem", "biomesoplenty:goldenrod", "chisel:limestone/raw", "lifesteal:heart_ore", "minecraft:stone"]
+		#Profile 4 - A list of blocks to strip away from the world
+		profile_4 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+		#Profile 5 - A list of blocks to strip away from the world
+		profile_5 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+
+	#Block Update Settings
+	[WorldStripper.BlockUpdate]
+		#Calls neighborChanged on surrounding blocks (with isMoving as false)
+		notify_neighbors = false
+		#Calls for block update
+		block_update = true
+		#Stops the blocks from being marked for a render update
+		no_render = false
+		#Makes the block be re-rendered immediately, on the main thread
+		render_main_thread = false
+		#Causes neighbor updates to be sent to ALL surrounding blocks
+		update_neighbors = true
+

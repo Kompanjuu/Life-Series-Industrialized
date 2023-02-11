@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "draconicevolution:overworld_draconium_ore",
+      "filler": "chisel:basalt/raw",
+      "minY": 1,
+      "maxY": 40,
+      "maxVeinSize": 8,
+      "spawnRate": 75.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

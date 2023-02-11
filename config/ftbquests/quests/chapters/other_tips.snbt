@@ -1,0 +1,173 @@
+{
+	id: "64A6B721F67D0B21"
+	group: ""
+	order_index: 6
+	filename: "other_tips"
+	title: "Other tips"
+	icon: "cyclic:crafting_stick"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "4E2E2F8D45E736DC"
+			tasks: [
+				{
+					id: "715B8E74EFF1C774"
+					type: "item"
+					item: "cyclic:crafting_stick"
+				}
+				{
+					id: "736498E20657790A"
+					type: "item"
+					item: {
+						id: "cyclic:crafting_bag"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 9
+								Items: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "2A6EF7F7F5E3BDDB"
+			tasks: [
+				{
+					id: "5FC79A4D9ADCCF5F"
+					type: "item"
+					item: "easy_piglins:barterer"
+				}
+				{
+					id: "35A1813716379456"
+					type: "item"
+					item: "easy_villagers:trader"
+				}
+			]
+		}
+		{
+			title: "Nomadic Tents"
+			icon: {
+				id: "nomadictents:medium_yurt"
+				Count: 1b
+				tag: { }
+			}
+			x: -0.5d
+			y: 2.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "37852EE7CE586E03"
+			tasks: [
+				{
+					id: "4020C8B5CBBF9CDF"
+					type: "item"
+					item: "nomadictents:tent_canvas"
+				}
+				{
+					id: "17BA71DC0AE36F3A"
+					type: "item"
+					item: {
+						id: "nomadictents:mallet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "149F5CE26B9AA296"
+			tasks: [
+				{
+					id: "5D40666F2D727D05"
+					type: "item"
+					item: "botania:crafting_halo"
+				}
+				{
+					id: "38FE7530B2714D28"
+					type: "item"
+					item: "botania:auto_crafting_halo"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			subtitle: "Not that good. But pretty useful"
+			dependencies: ["5B88785277B2E113"]
+			id: "6B4217A9E9E611DB"
+			tasks: [{
+				id: "07E5D14442EC7859"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+		}
+		{
+			icon: "apotheosis:enchantment_library"
+			x: -2.5d
+			y: -2.0d
+			subtitle: "Allows for easier enchanting"
+			dependencies: ["5B88785277B2E113"]
+			id: "086CB06C6C63A3EF"
+			tasks: [
+				{
+					id: "4102E53291D11239"
+					type: "item"
+					item: "apotheosis:enchantment_library"
+				}
+				{
+					id: "393120E0BCC8222F"
+					type: "item"
+					item: "apotheosis:ender_library"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			subtitle: "Reverses mining speed"
+			description: ["Instamine obsidian and mine flowers like it's bedrock."]
+			dependencies: ["5B88785277B2E113"]
+			id: "4EB8F7C5FDEC28C1"
+			tasks: [{
+				id: "12D3782E879142DD"
+				type: "item"
+				item: {
+					id: "eidolon:reversal_pick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "1AA36A96562319B2"
+			tasks: [{
+				id: "5E03F336DB323DE7"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+	]
+}

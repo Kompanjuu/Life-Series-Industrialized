@@ -1,0 +1,333 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = 2
+  action = movebutton
+  y = -43
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = sethoverlabel
+  label = U have friends?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = mid-centered
+  x = 104
+  action = movebutton
+  y = 17
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = -43
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 18
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = sethoverlabel
+  label = Not good enough?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = mid-centered
+  x = 0
+  action = movebutton
+  y = 17
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = sethoverlabel
+  label = Already?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 17
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -43
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = sethoverlabel
+  label = For Parasocials
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -19
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = sethoverlabel
+  label = List go brrrr
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = -19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 293
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = c7d49d02-b753-42be-840a-86bffe277c5f1668367883447
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 108
+  action = deep_customization_element:title_screen_branding
+  actionid = c3da5b9d-1a89-44b9-885f-583269bb7bfa1668367883462
+  y = 417
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 625
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 408b2b8e-fbdd-4436-aed4-9197e373bd141668367883462
+  y = 439
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 530
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 3c5134ca-a312-41e4-8c6c-4086db503bfd1668367883462
+  y = 214
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 290
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = adc925fe-1850-4019-84a9-cb901da037031668367883462
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 7371888b-a276-4f78-b2b3-c11c1849ffde1668367883462
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = join_last_world
+  label = Continue
+  vr:showif:worldloaded = false
+  loopbackgroundanimations = true
+  hoverlabel = Addiction aquired
+  x = -100
+  width = 200
+  actionid = 0db64aa9-e2e6-4c55-af81-2fad7ff928531668368308256
+  action = addbutton
+  y = -67
+  value = null
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = My other projects!
+  loopbackgroundanimations = true
+  hoverlabel = YES! Click me!
+  x = -107
+  width = 100
+  actionid = 181e859f-5b7f-4b8d-88d1-75391e9b6eeb1668368676673
+  action = addbutton
+  y = -147
+  value = https://linktr.ee/kompanjuu
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = mid-centered
+  crouching = false
+  x = -156
+  slim = false
+  actionid = 95cbafb6-3d91-467d-96f2-64484b560cf21668368900712
+  action = addentity
+  y = 36
+  scale = 50
+  playername = %playername%
+  parrot = false
+}
+
+customization {
+  showname = true
+  orientation = bottom-right
+  crouching = false
+  x = -128
+  slim = false
+  actionid = 9ec9f258-a2a3-42ac-9e85-fd56aac082621668368941276
+  action = addentity
+  y = -25
+  scale = 30
+  playername = Kompanjuu
+  parrot = false
+}
+
+customization {
+  orientation = bottom-right
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = A modpack made by Kompanjuu
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -158
+  width = 200
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = bce7633b-ddc1-432f-a3db-aa01177b160d1668369384327
+  y = -21
+  alignment = left
+  height = 40
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton
+  label = Continue
+  vr:showif:worldloaded = true
+  loopbackgroundanimations = true
+  x = -100
+  width = 200
+  actionid = 622e9d4a-b2a7-4d6a-90fe-a2506b0c9f671668373088792
+  action = addbutton
+  y = -67
+  value = net.minecraft.client.gui.screen.IngameMenuScreen:button_compatibility_id:mc_pausescreen_return_to_game_button
+  height = 20
+}
+
+customization {
+  orientation = bottom-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = opencustomgui
+  x = -47
+  width = 40
+  actionid = bfdd36ce-38c0-43ab-8368-391c43d4e2861668448537212
+  action = addbutton
+  y = -172
+  label = Credits
+  value = Credits
+  height = 20
+}
+
+customization {
+  path = picture.jpg
+  orientation = bottom-right
+  x = -107
+  width = 100
+  action = addtexture
+  actionid = 2d3fa585-e1c0-429a-a0e0-1fa25514ce6c1674143869865
+  y = -123
+  height = 100
+}
+

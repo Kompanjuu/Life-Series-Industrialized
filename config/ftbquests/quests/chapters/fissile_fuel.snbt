@@ -1,0 +1,177 @@
+{
+	id: "079848437328E385"
+	group: "2FB951217AFBB7A1"
+	order_index: 0
+	filename: "fissile_fuel"
+	title: "HDPE Sheet"
+	icon: "mekanism:hdpe_sheet"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: [
+				"73E89A97ED304E32"
+				"0BD5DFD8593665B6"
+			]
+			id: "329256136B86CDBE"
+			tasks: [{
+				id: "41D41FA21059CB62"
+				type: "item"
+				item: "mekanism:hdpe_sheet"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: [
+				"38E04FD0F7A3CE5E"
+				"0D712E70EAB7971E"
+				"5A59012D5AB77E01"
+				"0747C60C4C64ADAF"
+			]
+			id: "0BD5DFD8593665B6"
+			tasks: [{
+				id: "66AF13293CCA8CB5"
+				type: "item"
+				item: "mekanism:hdpe_pellet"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			dependencies: [
+				"2F75E9D00041A33D"
+				"3F7E58CE94AAB851"
+				"38E04FD0F7A3CE5E"
+			]
+			id: "0747C60C4C64ADAF"
+			tasks: [{
+				id: "2E28B47C1F4E82DD"
+				type: "item"
+				item: "mekanism:substrate"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			dependencies: [
+				"40294791F871CB17"
+				"4401D1AEE77B5C11"
+			]
+			id: "0D712E70EAB7971E"
+			tasks: [{
+				id: "2527DF29793745A2"
+				type: "item"
+				item: "mekanism:ethene_bucket"
+			}]
+		}
+		{
+			icon: "mekanism:ethene_bucket"
+			x: -5.5d
+			y: -3.0d
+			subtitle: "Gas = no item = can't add direct quest"
+			dependencies: ["0747C60C4C64ADAF"]
+			id: "40294791F871CB17"
+			tasks: [{
+				id: "3621748C38F4810F"
+				type: "checkmark"
+				title: "Ethylene Gas"
+			}]
+		}
+		{
+			icon: "mekanism:oxygen_bucket"
+			x: -3.5d
+			y: 1.0d
+			subtitle: "Gas = no item = can't add direct quest"
+			dependencies: ["743E9D8ABFEE3F6C"]
+			id: "5A59012D5AB77E01"
+			tasks: [{
+				id: "17F83FF829C850AC"
+				type: "checkmark"
+				title: "Oxygen Gas"
+			}]
+		}
+		{
+			icon: "mekanism:hydrogen_bucket"
+			x: -5.5d
+			y: 1.0d
+			subtitle: "Gas = no item = can't add direct quest"
+			dependencies: ["743E9D8ABFEE3F6C"]
+			id: "2F75E9D00041A33D"
+			tasks: [{
+				id: "7575E425E2415B2E"
+				type: "checkmark"
+				title: "Hydrogen Gas"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			dependencies: ["5E97639839BB2286"]
+			id: "743E9D8ABFEE3F6C"
+			tasks: [{
+				id: "0432AA2A021DE9EA"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.0d
+			dependencies: ["15912FBB96C29AB7"]
+			id: "38E04FD0F7A3CE5E"
+			tasks: [{
+				id: "571E38D2BA82EF9B"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.0d
+			dependencies: ["1FCA42DFA46A1518"]
+			id: "3F7E58CE94AAB851"
+			tasks: [{
+				id: "312234BC7D25E8FB"
+				type: "item"
+				item: "mekanism:bio_fuel"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -1.0d
+			dependencies: ["0650CDD3C7B8414C"]
+			id: "1FCA42DFA46A1518"
+			tasks: [{
+				id: "58A3CA37CADF0C93"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			dependencies: ["3B69D05DA3D84743"]
+			id: "4401D1AEE77B5C11"
+			tasks: [{
+				id: "34DD3A286B2E523E"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["7F387D217BC12521"]
+			id: "73E89A97ED304E32"
+			tasks: [{
+				id: "06A764FC00C0CDB2"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+	]
+}

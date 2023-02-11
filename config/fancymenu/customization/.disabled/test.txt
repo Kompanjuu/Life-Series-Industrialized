@@ -1,0 +1,110 @@
+type = menu
+
+customization-meta {
+  identifier = com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -43
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -67
+}
+
+customization {
+  identifier = %id=400298%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502346%
+  orientation = mid-centered
+  x = 2
+  action = movebutton
+  y = -19
+}
+
+customization {
+  identifier = %id=604382%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376382%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -19
+}
+
+customization {
+  path = kompanjuu.png
+  orientation = bottom-right
+  x = -106
+  width = 100
+  action = addtexture
+  actionid = d507b5b1-99dd-4fe1-951f-5a7dfcac823f1660986666359
+  y = -121
+  height = 100
+}
+
+customization {
+  orientation = bottom-right
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = A modpack by Kompanjuu
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -131
+  width = 126
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = f08224e3-8bb8-4dc0-865f-8f376629638d1660986912547
+  y = -20
+  alignment = left
+  height = 18
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = false
+  buttonaction = openlink
+  label = My other projects
+  loopbackgroundanimations = true
+  hoverlabel = Click me!
+  x = -106
+  width = 100
+  actionid = d319cf2d-6891-4426-898b-2a140ae8280d1660987221612
+  action = addbutton
+  y = -145
+  value = https://linktr.ee/kompanjuu
+  height = 20
+}
+

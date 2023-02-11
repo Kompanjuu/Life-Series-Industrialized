@@ -1,0 +1,31 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.OptionsScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton
+  label = Mods
+  loopbackgroundanimations = true
+  orientation_element = vanillabtn:345280
+  x = 0
+  width = 150
+  actionid = b83605c9-1016-4cae-b93e-7d2e2a250cbf1660989320948
+  action = addbutton
+  y = 24
+  value = net.minecraft.client.gui.screen.MainMenuScreen:button_compatibility_id:forge_titlescreen_mods_button
+  height = 20
+}
+

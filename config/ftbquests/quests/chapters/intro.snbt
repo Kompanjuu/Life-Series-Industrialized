@@ -1,0 +1,88 @@
+{
+	id: "5B88785277B2E113"
+	group: ""
+	order_index: 0
+	filename: "intro"
+	title: "Intro"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Intro!"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Welcome to Life Series: Industrialized! This modpack contains a quest line. BUT, it's only a guide and isn't needed at all to progress. This is only exists because of mod overlapping."
+				"Good Luck and have fun!"
+			]
+			id: "3AED6D24C8205AA1"
+			tasks: [{
+				id: "02F7AE18CA6DC3AA"
+				type: "checkmark"
+				title: "Intro"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			shape: "heart"
+			description: ["Because Lifesteal often creates alliences that also can break, there are actually no mod to handle teams. This is to allow occurances like this to happen."]
+			dependencies: ["3AED6D24C8205AA1"]
+			id: "445FBE6AB209837F"
+			tasks: [{
+				id: "48A59A284E100900"
+				type: "checkmark"
+				title: "Teams"
+			}]
+		}
+		{
+			title: "Progression"
+			x: 4.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["After checking the box above the game will track your progress and send in game messges, so called toasts, to you after each completed task. If you don't want to recieve these then don't check the box above. You can still see all quests."]
+			dependencies: ["445FBE6AB209837F"]
+			id: "2D3DCE2ACA841C4F"
+			tasks: [{
+				id: "05778EBCD1813B5B"
+				type: "checkmark"
+				title: "PLEASE READ"
+			}]
+		}
+		{
+			title: "General tip"
+			x: 0.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: ["A general tip is to start with mekanism"]
+			dependencies: ["3AED6D24C8205AA1"]
+			id: "292F3CA5A5FE39CA"
+			tasks: [{
+				id: "05AE004C64F72249"
+				type: "checkmark"
+				title: "Ok"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["The heart token is used to remove and add hearts. Right click with an empty token to remove a heart and right click with a filled token to increase your max health. These items can be exchanged with other players."]
+			dependencies: ["3AED6D24C8205AA1"]
+			optional: true
+			id: "474450021441B5B4"
+			tasks: [
+				{
+					id: "26EF81826FA0FB9B"
+					type: "item"
+					item: "kubejs:heart_token"
+				}
+				{
+					id: "44A0D7785BF8922E"
+					type: "item"
+					item: "kubejs:empty_heart_token"
+				}
+			]
+		}
+	]
+}

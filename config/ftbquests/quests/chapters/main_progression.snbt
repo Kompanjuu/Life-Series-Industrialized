@@ -1,0 +1,3381 @@
+{
+	id: "4C23B1866AAA455F"
+	group: ""
+	order_index: 1
+	filename: "main_progression"
+	title: "Main progression"
+	icon: "kubejs:chaotic_control_circuit"
+	disable_toast: true
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 4.5d
+			y: 0.0d
+			subtitle: "How do you feel?"
+			dependencies: [
+				"30F01F5B9E174BE0"
+				"3FBC24A3790E8D59"
+				"1DEA28EA84E78CAF"
+				"2C0EB7950A303B96"
+				"5EADFC0CB902AAE4"
+				"4481F99EFE817537"
+			]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "4A00AFA344C017E9"
+			tasks: [{
+				id: "740739726605EE9C"
+				type: "item"
+				item: "moremekanismprocessing:tungsten_ingot"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 1.5d
+			dependencies: ["7E731EE415B97F01"]
+			id: "1DEA28EA84E78CAF"
+			tasks: [{
+				id: "2365C279FAA758DF"
+				type: "item"
+				item: {
+					id: "tconstruct:repair_kit"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:plated_slimewood"
+					}
+				}
+			}]
+		}
+		{
+			title: "Enderium"
+			x: -5.5d
+			y: 4.5d
+			dependencies: ["52437D1B9DD898D0"]
+			id: "30F01F5B9E174BE0"
+			tasks: [{
+				id: "5BD24752F02A1DFD"
+				type: "item"
+				item: "thermal:enderium_ingot"
+			}]
+		}
+		{
+			title: "Smeltery!"
+			icon: "tconstruct:smeltery_controller"
+			x: -11.5d
+			y: 3.5d
+			subtitle: "A more rigid melter, The Smeltery!"
+			dependencies: ["44936D06A89C7A5D"]
+			id: "7E731EE415B97F01"
+			tasks: [
+				{
+					id: "6D4B7F083921BD22"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "46CA854D365DDF48"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "532E1869CD4B7F69"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+				}
+			]
+		}
+		{
+			title: "First Melter!"
+			icon: "tconstruct:seared_heater"
+			x: -13.5d
+			y: 2.5d
+			subtitle: "It works, but barely."
+			dependencies: ["3F596B27F04337A0"]
+			id: "44936D06A89C7A5D"
+			tasks: [
+				{
+					id: "0B2FE3DE13CE0E48"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "184EAA89EB31B984"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "6F5A2B2937814005"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "59FCEBE6FD5734A4"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "489E832A1A8488E9"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+		}
+		{
+			title: "Tinker's Construct"
+			x: -15.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "The start of Tinker's Construct, with the beginning of the smeltery."
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "3F596B27F04337A0"
+			tasks: [{
+				id: "4290CE5B86A91DDC"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			title: "Steel"
+			x: -13.5d
+			y: -3.5d
+			subtitle: "Steel is a very useful material that you will need tons of."
+			dependencies: [
+				"682AD0F259F0B68D"
+				"5B4D559B5A070D16"
+			]
+			dependency_requirement: "one_completed"
+			id: "21B8B2AEE2E436BB"
+			tasks: [{
+				id: "27244E20B4AFC7D1"
+				type: "item"
+				title: "Steel Ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 6.5d
+			dependencies: ["0F8E56E37CC6FD00"]
+			id: "3FBC24A3790E8D59"
+			tasks: [{
+				id: "4E8C254AC2B8035F"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+		}
+		{
+			title: "Mana generation"
+			x: -7.5d
+			y: 7.5d
+			dependencies: ["3986D83FC03BC770"]
+			id: "0F8E56E37CC6FD00"
+			tasks: [
+				{
+					id: "543D8D558F302E04"
+					type: "item"
+					title: "Any #botania:generating_special_flowers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "botania:generating_special_flowers"
+						}
+					}
+				}
+				{
+					id: "657DC18540EFA0FD"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: 7.5d
+			dependencies: ["4851D174C547B4AE"]
+			id: "3986D83FC03BC770"
+			tasks: [{
+				id: "4E6629FA11C68584"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 7.5d
+			dependencies: ["0B5E6DD5CF3C3FC7"]
+			id: "0E4A25977EDBF9BD"
+			tasks: [{
+				id: "6FDAE3E3BDFE1116"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 7.5d
+			dependencies: ["0E4A25977EDBF9BD"]
+			id: "4851D174C547B4AE"
+			tasks: [{
+				id: "4846DA491F9913E3"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 8.5d
+			dependencies: ["0F8E56E37CC6FD00"]
+			id: "27018E753D703794"
+			tasks: [{
+				id: "6CB2FC5A69D3F851"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 7.5d
+			description: ["Refer to the book."]
+			dependencies: [
+				"3FBC24A3790E8D59"
+				"27018E753D703794"
+			]
+			id: "7A7222E25E331133"
+			tasks: [{
+				id: "7580CC0683BEFC3F"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			subtitle: "Throw some stuff on it"
+			description: ["Place a spark on the plate and on a mana pool. After filling the pool to at least half drop all the necessary items on the terrasteel plate."]
+			dependencies: ["7A7222E25E331133"]
+			id: "67BCC74D31268DCA"
+			tasks: [{
+				id: "34B08C12AF523C25"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.5d
+			dependencies: ["7A7222E25E331133"]
+			id: "71D35315D8B23D40"
+			tasks: [{
+				id: "5B08352B3D2CD27B"
+				type: "item"
+				item: "botania:spark"
+			}]
+		}
+		{
+			title: "Mekanism"
+			x: -15.5d
+			y: -4.5d
+			shape: "rsquare"
+			subtitle: "Mekanism starts with the metallurgic infuser."
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "5B4D559B5A070D16"
+			tasks: [{
+				id: "7BC59F6C143A822E"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			title: "Immersive engineering"
+			x: -15.5d
+			y: -29.0d
+			shape: "rsquare"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "27B03901B47C9BD7"
+			tasks: [{
+				id: "6A775611DB90E5D6"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -13.0d
+			y: -9.0d
+			dependencies: ["5B4D559B5A070D16"]
+			id: "6AB151F29D340761"
+			tasks: [{
+				id: "495A88EFC85089BE"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -9.0d
+			dependencies: [
+				"6AB151F29D340761"
+				"368C0DA505B743F6"
+			]
+			id: "441CF3DCCC91E5E8"
+			tasks: [{
+				id: "52EF6377EB46966D"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -9.0d
+			dependencies: [
+				"441CF3DCCC91E5E8"
+				"6E70AC756FE0034A"
+			]
+			id: "220ECCB5781665D5"
+			tasks: [{
+				id: "5218AFDFDF30F5B6"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -9.0d
+			dependencies: [
+				"220ECCB5781665D5"
+				"6E4C0CF3469C97CC"
+			]
+			id: "3910A1AB76A415E1"
+			tasks: [{
+				id: "2526BA5472A19F99"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -7.0d
+			dependencies: ["5B4D559B5A070D16"]
+			id: "368C0DA505B743F6"
+			tasks: [{
+				id: "6673D9DC1A7DF7C3"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -7.0d
+			dependencies: ["368C0DA505B743F6"]
+			id: "6E70AC756FE0034A"
+			tasks: [{
+				id: "2A04A73752EF66B0"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -7.0d
+			dependencies: ["6E70AC756FE0034A"]
+			id: "6E4C0CF3469C97CC"
+			tasks: [{
+				id: "241C9CCAA150AC96"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -11.0d
+			dependencies: ["441CF3DCCC91E5E8"]
+			id: "29FED40CD76D5DAC"
+			tasks: [{
+				id: "4A6841D601E2FE81"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -13.0d
+			dependencies: ["6AB151F29D340761"]
+			id: "7F387D217BC12521"
+			tasks: [{
+				id: "393DAB15DB2AAE41"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			title: "Elven Gateway"
+			x: 0.5d
+			y: 7.5d
+			description: ["refer to the book for building this."]
+			dependencies: ["67BCC74D31268DCA"]
+			id: "0881B471809AF99A"
+			tasks: [
+				{
+					id: "78FCA996A1EA797D"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "7048BE77C5B10DFC"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+				{
+					id: "773A7C222A891B29"
+					type: "item"
+					item: "botania:livingwood"
+					count: 8L
+				}
+				{
+					id: "52C97841A5696165"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 6.5d
+			dependencies: [
+				"0881B471809AF99A"
+				"2F2CF513281716BA"
+			]
+			id: "19935296A04F054F"
+			tasks: [{
+				id: "1E7FCFD4A5B57EA9"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 10.5d
+			dependencies: ["0F8E56E37CC6FD00"]
+			id: "727937EC72F645C5"
+			tasks: [{
+				id: "232834D21B83CB4A"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.5d
+			dependencies: [
+				"727937EC72F645C5"
+				"0881B471809AF99A"
+			]
+			id: "2F2CF513281716BA"
+			tasks: [{
+				id: "706737A93C644164"
+				type: "item"
+				item: "botania:pixie_dust"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -11.0d
+			dependencies: ["6AB151F29D340761"]
+			id: "0650CDD3C7B8414C"
+			tasks: [{
+				id: "0C2CC1F36CF1247F"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+		}
+		{
+			title: "Blazing Blood"
+			x: -9.5d
+			y: 3.5d
+			subtitle: "Blaze burning"
+			description: ["Pick up a blaze and drop it in your smeltry to get blazing blood. This is required for tougher materials"]
+			dependencies: ["7E731EE415B97F01"]
+			id: "061940FA08B75FC4"
+			tasks: [{
+				id: "4006FAB12EB2EEE1"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
+		}
+		{
+			title: "Signalum"
+			x: -9.5d
+			y: 5.5d
+			dependencies: ["7E731EE415B97F01"]
+			id: "1B18D182D775CC48"
+			tasks: [{
+				id: "3681BCDB15A7EDD0"
+				type: "item"
+				item: "thermal:signalum_ingot"
+			}]
+		}
+		{
+			title: "Lumium"
+			x: -7.5d
+			y: 4.5d
+			dependencies: [
+				"1B18D182D775CC48"
+				"061940FA08B75FC4"
+			]
+			id: "52437D1B9DD898D0"
+			tasks: [{
+				id: "3C927E16D1E4BB31"
+				type: "item"
+				item: "thermal:lumium_ingot"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 2.5d
+			dependencies: ["061940FA08B75FC4"]
+			id: "077245913214D5F3"
+			tasks: [{
+				id: "3B8648AF9D4C4D20"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+			}]
+		}
+		{
+			title: "Omega ingots"
+			x: -3.5d
+			y: 4.5d
+			shape: "circle"
+			subtitle: "Omega ingots are required to create harder alloys and progressing."
+			dependencies: [
+				"67BCC74D31268DCA"
+				"077245913214D5F3"
+				"30F01F5B9E174BE0"
+			]
+			id: "3A2CBB9A8FA74499"
+			tasks: [{
+				id: "0DF7893FCC309DCA"
+				type: "item"
+				item: "kubejs:omega_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: [
+				"3FF3F5654F5E53C6"
+				"3A2CBB9A8FA74499"
+			]
+			id: "14ABC1B731307C5D"
+			tasks: [{
+				id: "3CF468BA06EB81F9"
+				type: "item"
+				item: "kubejs:omega_dust"
+			}]
+		}
+		{
+			title: "Pneumaticcraft: Repressurized"
+			x: -15.5d
+			y: 15.5d
+			shape: "rsquare"
+			subtitle: "The start of Pneumaticcraft!"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "686D23CBE59F6EC0"
+			tasks: [{
+				id: "297D468EF9D710B0"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 15.5d
+			dependencies: ["686D23CBE59F6EC0"]
+			id: "1647041BDE829FAA"
+			tasks: [{
+				id: "5B62B712EA6A05FA"
+				type: "item"
+				item: "pneumaticcraft:air_compressor"
+			}]
+		}
+		{
+			title: "Pressure chamber"
+			x: -11.5d
+			y: 13.5d
+			subtitle: "Build the pressure chamber! It is way more reliable in making compressed items."
+			description: ["It's also used for crafting unique items."]
+			dependencies: [
+				"21B8B2AEE2E436BB"
+				"1647041BDE829FAA"
+			]
+			id: "3FF3F5654F5E53C6"
+			tasks: [
+				{
+					id: "11662F8ADA88DE53"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 23L
+				}
+				{
+					id: "78A6AA12A084BF86"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+				{
+					id: "4BABA535DAF7A8CA"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			subtitle: "How bad can it be?"
+			dependencies: [
+				"14ABC1B731307C5D"
+				"6E4C0CF3469C97CC"
+			]
+			size: 2.0d
+			id: "1B9DC0B1687AAAB7"
+			tasks: [{
+				id: "1592EC802D9E694D"
+				type: "item"
+				item: "kubejs:alloy_chaotic"
+			}]
+		}
+		{
+			title: "More expensive?"
+			icon: "kubejs:chaotic_control_circuit"
+			x: 6.5d
+			y: 6.0d
+			subtitle: "More expensive ingredients but less variation."
+			dependencies: [
+				"3910A1AB76A415E1"
+				"1B9DC0B1687AAAB7"
+				"146190B419C07809"
+			]
+			size: 1.5d
+			id: "642A06AFDF56560C"
+			tasks: [
+				{
+					id: "71D09BADC06EE38C"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2L
+				}
+				{
+					id: "2C72626B55884487"
+					type: "item"
+					item: "kubejs:alloy_chaotic"
+					count: 5L
+				}
+				{
+					id: "43131BD019ED95CE"
+					type: "item"
+					item: "mekanism:ultimate_control_circuit"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Cheaper?"
+			icon: "kubejs:chaotic_control_circuit"
+			x: 6.5d
+			y: 3.0d
+			subtitle: "Cheaper by using less but more varied ingredients."
+			dependencies: [
+				"1B9DC0B1687AAAB7"
+				"4A00AFA344C017E9"
+				"466FC9360FFB253B"
+				"5A24558291CD6398"
+				"3910A1AB76A415E1"
+				"34D48E124E11569C"
+			]
+			size: 1.5d
+			id: "0B5041BDB3116C4A"
+			tasks: [
+				{
+					id: "4DF2DD4F4D4CDE63"
+					type: "item"
+					item: "moremekanismprocessing:tungsten_ingot"
+					count: 2L
+				}
+				{
+					id: "7CE1FD27C379EC1F"
+					type: "item"
+					item: "pneumaticcraft:advanced_pcb"
+					count: 2L
+				}
+				{
+					id: "67C70AF564C8EF02"
+					type: "item"
+					item: "draconicevolution:awakened_core"
+					count: 2L
+				}
+				{
+					id: "669D4CF6ADA5FDC2"
+					type: "item"
+					item: "kubejs:alloy_chaotic"
+					count: 2L
+				}
+				{
+					id: "31D23FF442A9B5E0"
+					type: "item"
+					item: "mekanism:ultimate_control_circuit"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: 16.5d
+			dependencies: ["1647041BDE829FAA"]
+			id: "7FA54E1D37548E8E"
+			tasks: [{
+				id: "4896ADFD01B3A2FD"
+				type: "item"
+				item: "pneumaticcraft:small_tank"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 15.5d
+			dependencies: ["7FA54E1D37548E8E"]
+			id: "0C10900FB7EA4B09"
+			tasks: [{
+				id: "302A80AD7B3CA6A7"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 19.5d
+			dependencies: ["7FA54E1D37548E8E"]
+			id: "0563955262A4DE22"
+			tasks: [{
+				id: "1F9A3664347DA689"
+				type: "item"
+				item: "pneumaticcraft:etching_tank"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 17.5d
+			dependencies: ["7FA54E1D37548E8E"]
+			id: "43BDA6969A5E294C"
+			tasks: [{
+				id: "3E86140F9211EEDB"
+				type: "item"
+				item: "pneumaticcraft:fluid_mixer"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 14.5d
+			dependencies: ["0C10900FB7EA4B09"]
+			id: "5F4780FA3EBC4C9B"
+			tasks: [{
+				id: "54AF22999325F28B"
+				type: "item"
+				item: "pneumaticcraft:yeast_culture_bucket"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 16.5d
+			dependencies: ["0C10900FB7EA4B09"]
+			id: "76E6B4080F4F3446"
+			tasks: [{
+				id: "016C9A787B99C816"
+				type: "item"
+				item: "pneumaticcraft:vegetable_oil_bucket"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 14.5d
+			dependencies: ["5F4780FA3EBC4C9B"]
+			id: "7ABF201646D220FF"
+			tasks: [{
+				id: "03D1616373291869"
+				type: "item"
+				item: "pneumaticcraft:ethanol_bucket"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 15.5d
+			dependencies: [
+				"76E6B4080F4F3446"
+				"7ABF201646D220FF"
+				"43BDA6969A5E294C"
+			]
+			id: "3C48B46F4F08EE2A"
+			tasks: [{
+				id: "55B3EBA2983F52E0"
+				type: "item"
+				item: "pneumaticcraft:biodiesel_bucket"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 15.5d
+			dependencies: ["3C48B46F4F08EE2A"]
+			id: "2CBC80D6F76EEAAB"
+			tasks: [{
+				id: "4676E0D5856E6A1E"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 16.5d
+			dependencies: [
+				"0563955262A4DE22"
+				"2CBC80D6F76EEAAB"
+				"3FF3F5654F5E53C6"
+			]
+			id: "1C925829FB14ABC8"
+			tasks: [{
+				id: "66DD9B1A50DF2380"
+				type: "item"
+				item: "pneumaticcraft:etching_acid_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 14.5d
+			dependencies: ["2CBC80D6F76EEAAB"]
+			id: "64349982320BC8E0"
+			tasks: [{
+				id: "0C1995978F0D7C2B"
+				type: "item"
+				item: "pneumaticcraft:heat_frame"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 14.5d
+			dependencies: ["64349982320BC8E0"]
+			id: "3054921D40E435E9"
+			tasks: [{
+				id: "2239B426ECF169D5"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 15.5d
+			dependencies: ["3054921D40E435E9"]
+			id: "34F20B548F1F77C2"
+			tasks: [{
+				id: "62CD449DF48A9773"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 15.5d
+			dependencies: ["34F20B548F1F77C2"]
+			id: "3504E7A4FF7D8AFE"
+			tasks: [{
+				id: "1CCE45324BA70266"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 15.5d
+			dependencies: [
+				"1C925829FB14ABC8"
+				"3504E7A4FF7D8AFE"
+			]
+			id: "12F06E7043A7F001"
+			tasks: [{
+				id: "471C34920AF6BE65"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 15.5d
+			dependencies: ["12F06E7043A7F001"]
+			id: "2ACA5A7CDC15A3FE"
+			tasks: [{
+				id: "16AE47C33CA08C28"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 15.5d
+			dependencies: ["2ACA5A7CDC15A3FE"]
+			id: "5A24558291CD6398"
+			tasks: [{
+				id: "7F4E40DCC0F4A3C8"
+				type: "item"
+				item: "pneumaticcraft:advanced_pcb"
+			}]
+		}
+		{
+			title: "The Assembly"
+			x: 4.5d
+			y: 13.5d
+			subtitle: "The assembly is a powerful machine that automate recipes, at a lower price!"
+			dependencies: [
+				"2ACA5A7CDC15A3FE"
+				"3054921D40E435E9"
+			]
+			id: "474B178346B9601E"
+			tasks: [
+				{
+					id: "0C5C1A73FA5D4618"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "5B23E87F5FAF58A4"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "321BB5707871D39B"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "3069C88DFC049E40"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "5A870B492DFCA86B"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+				{
+					id: "08462EB9FD081EC6"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+			]
+		}
+		{
+			title: "Draconic Evolution"
+			x: -15.5d
+			y: 22.5d
+			shape: "rsquare"
+			subtitle: "The start of Draconic Evolution!"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "6EC0650F6DED672A"
+			tasks: [{
+				id: "3827E5BAF341ABD3"
+				type: "item"
+				item: "draconicevolution:draconium_ingot"
+			}]
+		}
+		{
+			title: "Botania"
+			x: -15.5d
+			y: 7.5d
+			shape: "rsquare"
+			subtitle: "The start of Botania!"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "0B5E6DD5CF3C3FC7"
+			tasks: [{
+				id: "6C60753FA82485B2"
+				type: "item"
+				title: "Any #botania:mystical_flowers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+			}]
+		}
+		{
+			x: -13.5d
+			y: 22.5d
+			dependencies: ["6EC0650F6DED672A"]
+			id: "7A8CE6BB7A422D34"
+			tasks: [{
+				id: "690E16BB171A9BEA"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 21.5d
+			dependencies: ["7A8CE6BB7A422D34"]
+			id: "3FB61729516ADA5B"
+			tasks: [{
+				id: "168BE58883C25452"
+				type: "item"
+				item: "draconicevolution:crafting_core"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 21.5d
+			dependencies: ["3FB61729516ADA5B"]
+			id: "261C7D586EEB6252"
+			tasks: [{
+				id: "4D909995AE89E15C"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 23.5d
+			dependencies: ["7A8CE6BB7A422D34"]
+			id: "0BBF7CEA7BD7A034"
+			tasks: [{
+				id: "798077946A400495"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 21.5d
+			dependencies: [
+				"261C7D586EEB6252"
+				"0BBF7CEA7BD7A034"
+			]
+			id: "41663AC9A328FFD3"
+			tasks: [{
+				id: "6771538CCAC72FD9"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 20.5d
+			dependencies: [
+				"41663AC9A328FFD3"
+				"146190B419C07809"
+			]
+			id: "62B4974BC9E3F44D"
+			tasks: [{
+				id: "646E5DA4D2C4E2D8"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 25.5d
+			dependencies: [
+				"6EC0650F6DED672A"
+				"29628216C6DBC1EE"
+			]
+			id: "0BA1A3871030E1C7"
+			tasks: [{
+				id: "67932981C47CF75E"
+				type: "item"
+				item: "lifesteal:heart_core"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 25.5d
+			dependencies: ["0BA1A3871030E1C7"]
+			id: "50CA5EDE5147781D"
+			tasks: [{
+				id: "262E2BAC154647FB"
+				type: "item"
+				item: "quark:diamond_heart"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 25.5d
+			dependencies: ["50CA5EDE5147781D"]
+			id: "42B6B7D2AFAF27BC"
+			tasks: [{
+				id: "13784AB51661D826"
+				type: "item"
+				item: "draconicevolution:dragon_heart"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 22.5d
+			dependencies: [
+				"42B6B7D2AFAF27BC"
+				"41663AC9A328FFD3"
+			]
+			id: "146190B419C07809"
+			tasks: [{
+				id: "51252C81CA73F38C"
+				type: "item"
+				item: "draconicevolution:awakened_draconium_block"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 22.5d
+			dependencies: [
+				"41663AC9A328FFD3"
+				"146190B419C07809"
+			]
+			id: "466FC9360FFB253B"
+			tasks: [{
+				id: "66DE560E5D980548"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 29.5d
+			dependencies: ["670ED8D624A812CA"]
+			id: "29628216C6DBC1EE"
+			tasks: [{
+				id: "04CB528B2057443C"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "From the HDPE plate quest line"
+			dependencies: ["079848437328E385"]
+			id: "2C0EB7950A303B96"
+			tasks: [{
+				id: "6D5C842B84F5913F"
+				type: "item"
+				item: "mekanism:hdpe_sheet"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -15.0d
+			dependencies: ["6AB151F29D340761"]
+			id: "3B69D05DA3D84743"
+			tasks: [{
+				id: "6AFFD74050A248D4"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -17.0d
+			dependencies: ["368C0DA505B743F6"]
+			id: "5E97639839BB2286"
+			tasks: [{
+				id: "510C1CD2F0977AE7"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -5.0d
+			dependencies: ["368C0DA505B743F6"]
+			id: "68B2B0FDBA5C4317"
+			tasks: [{
+				id: "548242374CD53391"
+				type: "item"
+				item: "mekanism:electric_pump"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -13.0d
+			dependencies: ["7F387D217BC12521"]
+			id: "15912FBB96C29AB7"
+			tasks: [{
+				id: "57AC5574D1BDBFDD"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -5.0d
+			dependencies: [
+				"21B8B2AEE2E436BB"
+				"6E4C0CF3469C97CC"
+			]
+			id: "7C17F30B9E4C6916"
+			tasks: [{
+				id: "7E584BDC2C70F0F5"
+				type: "item"
+				item: "mekanism:energy_tablet"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.0d
+			dependencies: ["7C17F30B9E4C6916"]
+			id: "250ECF0D477E6738"
+			tasks: [
+				{
+					id: "42DFBA20B9803594"
+					type: "item"
+					item: "mekanism:basic_energy_cube"
+				}
+				{
+					id: "63FF025B67C93E74"
+					type: "item"
+					item: "mekanism:advanced_energy_cube"
+				}
+				{
+					id: "5BF3B2B233017ED8"
+					type: "item"
+					item: "mekanism:elite_energy_cube"
+				}
+				{
+					id: "2813D53DE9F42E39"
+					type: "item"
+					item: "mekanism:ultimate_energy_cube"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -11.0d
+			dependencies: [
+				"3910A1AB76A415E1"
+				"29FED40CD76D5DAC"
+			]
+			id: "1F4EB8680E4C5F1C"
+			tasks: [{
+				id: "08115AED47880B1A"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 4.5d
+			subtitle: "The most advanced piece of technology"
+			dependencies: [
+				"0B5041BDB3116C4A"
+				"642A06AFDF56560C"
+				"02A96FCA3E6A7A46"
+			]
+			size: 2.0d
+			id: "08F2812BBD03C794"
+			tasks: [{
+				id: "77702B87ED7F7ED7"
+				type: "item"
+				item: "kubejs:reactor_core"
+			}]
+		}
+		{
+			title: "Fission Reactor"
+			x: -6.5d
+			y: -19.0d
+			description: ["The fission reactor is used to create polonium and plutonium. Link to how to build: https://ftb.fandom.com/wiki/Fission_Reactor_(Mekanism)#Construction"]
+			dependencies: [
+				"08F2812BBD03C794"
+				"4AE8DF4FEF2E95E4"
+			]
+			id: "51301603B2EE2C3B"
+			tasks: [
+				{
+					id: "715936A2035651B6"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+					count: 30L
+				}
+				{
+					id: "41F03B79F9CA929D"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+					count: 4L
+				}
+				{
+					id: "6EE0B8C17AB671E7"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+				}
+				{
+					id: "435E61E608CE3CE3"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -19.0d
+			dependencies: ["6AB151F29D340761"]
+			id: "2F872398E492D425"
+			tasks: [{
+				id: "4FCAB853737FF483"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -21.0d
+			dependencies: ["6AB151F29D340761"]
+			id: "74C99AB3C22FEEFF"
+			tasks: [{
+				id: "61E3CC5EE8A723C7"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -13.0d
+			dependencies: [
+				"29FED40CD76D5DAC"
+				"3910A1AB76A415E1"
+			]
+			id: "1EF27A52565313DD"
+			tasks: [{
+				id: "6B1F82AB1DD32109"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -20.0d
+			dependencies: ["51301603B2EE2C3B"]
+			id: "5FB35AC622BB9CFC"
+			tasks: [{
+				id: "3E7DF33E9A9DE6E2"
+				type: "item"
+				item: "mekanism:solar_neutron_activator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -18.0d
+			dependencies: ["51301603B2EE2C3B"]
+			id: "3E24C2C813959BA7"
+			tasks: [{
+				id: "6DA20B485E061173"
+				type: "item"
+				item: "mekanism:pellet_plutonium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -20.0d
+			dependencies: ["5FB35AC622BB9CFC"]
+			id: "0DA432C4821250CE"
+			tasks: [{
+				id: "4D61ED0CE53B2468"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -22.0d
+			subtitle: "Want to get massive amounts of polonium? Well you can!"
+			dependencies: [
+				"0DA432C4821250CE"
+				"3A74E59F0B6886EE"
+			]
+			id: "5CBBEB6E6C2D0BAF"
+			tasks: [{
+				id: "70159DB46F318205"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+				count: 1000L
+			}]
+		}
+		{
+			title: "Supercritical Phase Shifter"
+			x: -0.5d
+			y: -19.0d
+			dependencies: [
+				"0DA432C4821250CE"
+				"3E24C2C813959BA7"
+			]
+			id: "52441C80D6CD4E1E"
+			tasks: [
+				{
+					id: "6F78A938AE190BC9"
+					type: "item"
+					item: "mekanism:sps_casing"
+				}
+				{
+					id: "79B7C4ADC1F941F8"
+					type: "item"
+					item: "mekanism:sps_port"
+				}
+				{
+					id: "2D1794807FD683BD"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -19.0d
+			dependencies: ["52441C80D6CD4E1E"]
+			id: "066239186D2913E1"
+			tasks: [{
+				id: "1DE972DDD7792626"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -19.0d
+			dependencies: ["066239186D2913E1"]
+			id: "3A74E59F0B6886EE"
+			tasks: [{
+				id: "71EEDF59466CC8BE"
+				type: "item"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -15.0d
+			subtitle: "Want to know when you can return? The Geiger counter will measure radioactivity around your base"
+			dependencies: ["406F217761DA062D"]
+			id: "3BFA87B34931D00D"
+			tasks: [{
+				id: "713922CA047EC2F0"
+				type: "item"
+				item: "mekanism:geiger_counter"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -17.0d
+			subtitle: "Did an explosion happen? Try to retrieve as many resources as possible with this armour set and it's time to make a new base!"
+			dependencies: ["51301603B2EE2C3B"]
+			id: "406F217761DA062D"
+			tasks: [
+				{
+					id: "1790EAD1D657453A"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "6227109F9082AA56"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "31FCE8512BF7AC70"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "71888E9D2BD6D7FD"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 20.5d
+			dependencies: [
+				"466FC9360FFB253B"
+				"62B4974BC9E3F44D"
+			]
+			id: "1B5EA683B638B0F5"
+			tasks: [{
+				id: "660C1278A5B50DAB"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 22.5d
+			dependencies: [
+				"1B5EA683B638B0F5"
+				"466FC9360FFB253B"
+				"1231647D5458DAFF"
+			]
+			id: "721FC85F982DC1E2"
+			tasks: [{
+				id: "2065956CFAE5B9C2"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 13.5d
+			dependencies: ["3FF3F5654F5E53C6"]
+			id: "794EAA999F015551"
+			tasks: [{
+				id: "07AF20F999604ABE"
+				type: "item"
+				item: "kubejs:compressed_andesite"
+			}]
+		}
+		{
+			title: "Create"
+			x: -15.5d
+			y: 31.5d
+			shape: "rsquare"
+			subtitle: "The beginning of create! Also create's ponder is an amazing feature! Try to use it if you're new to the game. Just hold W while hovering your mouse on an item from create."
+			dependencies: [
+				"794EAA999F015551"
+				"5B88785277B2E113"
+			]
+			size: 1.5d
+			id: "17C62DCB649582B3"
+			tasks: [{
+				id: "59286DB98BB88272"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Mixer"
+			x: -9.5d
+			y: 30.5d
+			subtitle: "! ! ! ! ! ! ! ! ! ! ! ! ! SPOILER ! ! ! ! ! ! ! ! ! ! ! ! !"
+			description: ["The blaze burner is made by plazing an empty blaze burner close to a blaze"]
+			dependencies: ["4730C6E7D619DF23"]
+			id: "5994A4976607F8A6"
+			tasks: [
+				{
+					id: "140A4E7C7DE17CCB"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "05A198783EF825C5"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "2B129A45987FB778"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: 29.5d
+			subtitle: "A very basic but effective generation."
+			dependencies: ["4730C6E7D619DF23"]
+			id: "7A23D1A56DE40D74"
+			tasks: [{
+				id: "6E8A0F475D607CBE"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			title: "Windmill"
+			x: -11.5d
+			y: 31.5d
+			description: ["A more advanced alternative to the waterwheel. More expensive and higher stress capacity"]
+			dependencies: ["4730C6E7D619DF23"]
+			id: "0E060759B6A2CBDE"
+			tasks: [
+				{
+					id: "41C1BE0F22FF7B55"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "6A30EBD98E82207B"
+					type: "item"
+					item: "create:white_sail"
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: 33.5d
+			description: ["Like this works, but don't do this if you want to build things in larger scales."]
+			dependencies: ["4730C6E7D619DF23"]
+			id: "3088F1CA8F4478D7"
+			tasks: [
+				{
+					id: "59F7BFE40A7FCDD0"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "3F3DEC29094D167C"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 30.5d
+			dependencies: ["5994A4976607F8A6"]
+			id: "5EADFC0CB902AAE4"
+			tasks: [{
+				id: "67D395B4236B1CAC"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 30.5d
+			dependencies: ["5EADFC0CB902AAE4"]
+			id: "670ED8D624A812CA"
+			tasks: [{
+				id: "5D374112909BB5B1"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 31.5d
+			dependencies: ["17C62DCB649582B3"]
+			id: "4730C6E7D619DF23"
+			tasks: [{
+				id: "3B35C31A5CD9CD9A"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			title: "Sequenced Assembly"
+			x: -9.5d
+			y: 32.5d
+			dependencies: ["4730C6E7D619DF23"]
+			id: "34D48E124E11569C"
+			tasks: [
+				{
+					id: "06D03B073022A288"
+					type: "item"
+					item: "create:deployer"
+				}
+				{
+					id: "5BFAD74E5F073F29"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "3F041F736002DDC0"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "2EE950DD61D035D9"
+					type: "item"
+					item: "create:spout"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 32.5d
+			description: ["You've made the precision mechanism! You now also know how to create other stuff with the sequenced assembly"]
+			dependencies: ["34D48E124E11569C"]
+			id: "608226E80E130E45"
+			tasks: [{
+				id: "2216181C75BA9FB4"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 31.5d
+			description: ["The mechanical arm is a multipurpuse machine that can insert and ouput items into any kind of container."]
+			dependencies: [
+				"670ED8D624A812CA"
+				"608226E80E130E45"
+			]
+			id: "0D81BB0CE96B610A"
+			tasks: [{
+				id: "46DAECE74453EB33"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			title: "Farms"
+			x: -9.5d
+			y: 34.5d
+			description: ["These are some useful tools for your farms."]
+			dependencies: ["4730C6E7D619DF23"]
+			id: "7C1A0D3D8FF5D006"
+			tasks: [
+				{
+					id: "62DE6F3EDFADABCB"
+					type: "item"
+					item: "create:deployer"
+				}
+				{
+					id: "77FA2126DC90BFE6"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+				{
+					id: "234D968652F91B0F"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "4782EC8EA7F8F1DF"
+					type: "item"
+					item: "create:mechanical_harvester"
+				}
+				{
+					id: "2C28DBF119450B9F"
+					type: "item"
+					item: "create:mechanical_plough"
+				}
+			]
+		}
+		{
+			title: "Advanced Farms"
+			x: -7.5d
+			y: 34.5d
+			description: ["These are some general tools for those who want farms in industrial scale."]
+			dependencies: ["7C1A0D3D8FF5D006"]
+			id: "2111A219B3758CA7"
+			tasks: [
+				{
+					id: "648DF8B9862916C5"
+					type: "item"
+					item: "create:mechanical_piston"
+				}
+				{
+					id: "0FA5C0CB5346F012"
+					type: "item"
+					item: "create:piston_extension_pole"
+				}
+				{
+					id: "0EA8E7B580F3BEFA"
+					type: "item"
+					item: "create:mechanical_bearing"
+				}
+				{
+					id: "307BAE736A150AC7"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "454E2064A8F6EEC2"
+					type: "item"
+					item: "create:gantry_carriage"
+				}
+				{
+					id: "6F8B9E0DBBF4DA2E"
+					type: "item"
+					item: "create:gantry_shaft"
+				}
+				{
+					id: "68F32E29CE3FFB19"
+					type: "item"
+					item: "create:portable_storage_interface"
+				}
+			]
+		}
+		{
+			title: "Useful tools"
+			x: -9.5d
+			y: 36.5d
+			subtitle: "These are some useful (sometimes required) tools to help you in create."
+			dependencies: ["17C62DCB649582B3"]
+			id: "2D73E2A30C5DF125"
+			tasks: [
+				{
+					id: "67FF9C9C9F10465A"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "680612A47C6EB581"
+					type: "item"
+					item: "create:wrench"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 28.5d
+			dependencies: ["5EADFC0CB902AAE4"]
+			id: "5D5EF41FD7687E3C"
+			tasks: [
+				{
+					id: "797696B759EA5C0F"
+					type: "item"
+					item: "create:redstone_link"
+				}
+				{
+					id: "48C299A248197748"
+					type: "item"
+					item: "create:linked_controller"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 28.5d
+			dependencies: ["29628216C6DBC1EE"]
+			id: "599130F56814FA24"
+			tasks: [{
+				id: "3C4DD5659785E5ED"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+		}
+		{
+			x: -13.5d
+			y: 29.5d
+			dependencies: ["17C62DCB649582B3"]
+			id: "0CE464F4850B7F50"
+			tasks: [{
+				id: "2DC8B2016E1117AE"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -13.5d
+			y: 27.5d
+			dependencies: ["0CE464F4850B7F50"]
+			id: "4C06D5891F0A2C26"
+			tasks: [{
+				id: "3D2076A184EA0E66"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 30.5d
+			dependencies: ["29628216C6DBC1EE"]
+			id: "321D95294581FD40"
+			tasks: [{
+				id: "30133C8A5695DB9D"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 35.5d
+			dependencies: ["4730C6E7D619DF23"]
+			id: "06873D090521B4FF"
+			tasks: [{
+				id: "61FE695FDE0FB30B"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 30.5d
+			dependencies: ["321D95294581FD40"]
+			id: "0A24664FA7D4928F"
+			tasks: [{
+				id: "3316E409A54E9090"
+				type: "item"
+				item: "createaddition:copper_spool"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 30.5d
+			dependencies: ["0A24664FA7D4928F"]
+			id: "6F2D3AE929F8A5CD"
+			tasks: [{
+				id: "0F613C7DEB67E6FF"
+				type: "item"
+				item: "createaddition:connector"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 30.5d
+			dependencies: ["6F2D3AE929F8A5CD"]
+			id: "38D0522125CA638E"
+			tasks: [{
+				id: "5DBED6551C884CD1"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -6.0d
+			dependencies: ["21B8B2AEE2E436BB"]
+			id: "1D10E1F4099A00E9"
+			tasks: [{
+				id: "7493F80711AC6C19"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			title: "Tinker's tools"
+			icon: {
+				id: "tconstruct:crafting_station"
+				Count: 1b
+				tag: {
+					texture: "minecraft:oak_wood"
+				}
+			}
+			x: -13.5d
+			y: 0.5d
+			subtitle: "The tinkerer newbie"
+			dependencies: ["3F596B27F04337A0"]
+			id: "774B94D8F9311B6D"
+			tasks: [
+				{
+					id: "5502A0560A8F5C57"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "5B0741F263A3EFDA"
+					type: "item"
+					item: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_wood"
+						}
+					}
+				}
+				{
+					id: "469895C5085CB2F5"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "459D7A76294579EB"
+					type: "item"
+					item: "tconstruct:pattern"
+				}
+			]
+		}
+		{
+			title: "Casts"
+			x: -11.5d
+			y: 1.5d
+			subtitle: "Get this ingot cast, and all the others too"
+			description: ["place a ingot (or another item for that individual cast) on the casting table and pour some liquid gold, and now you have your cast!"]
+			dependencies: [
+				"774B94D8F9311B6D"
+				"44936D06A89C7A5D"
+			]
+			id: "25D20F3D4F7A1E4E"
+			tasks: [{
+				id: "2901FCF6A932C69E"
+				type: "item"
+				item: "tconstruct:ingot_cast"
+			}]
+		}
+		{
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 6.0f
+						"tconstruct:harvest_level": 0.0f
+						"tconstruct:durability": 60.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 3s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: -11.5d
+			y: -0.5d
+			subtitle: "Another way"
+			description: ["Created in the tinker station"]
+			dependencies: ["774B94D8F9311B6D"]
+			id: "037846A24A80ACC7"
+			tasks: [
+				{
+					id: "3CB1E556F1A133BF"
+					type: "item"
+					item: {
+						id: "tconstruct:hand_axe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 2.0f
+								"tconstruct:attack_damage": 6.0f
+								"tconstruct:harvest_level": 0.0f
+								"tconstruct:durability": 60.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 3s
+								}
+								{
+									name: "tconstruct:axe_transform_hidden"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "0E19D9D6AD1C3E8F"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "697B0EBA5533B927"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "72597AC998F42CC1"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "More tools!"
+			x: -9.5d
+			y: -0.5d
+			subtitle: "The possibilities are endless"
+			description: ["Tinker's Construct allow you to create tools with every combination of materials. You can experiment and research to get the best materials for some Insane combos!"]
+			dependencies: [
+				"037846A24A80ACC7"
+				"25D20F3D4F7A1E4E"
+			]
+			id: "7F8A7D9B83064DFD"
+			tasks: [{
+				id: "2175F8371AB975A0"
+				type: "checkmark"
+				title: "Completed"
+			}]
+		}
+		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:coke_oven"
+			x: -13.5d
+			y: -25.0d
+			subtitle: "It's getting warm in here"
+			description: ["Coke coals have 4x burn time in the blast furnace. Also pruduces creosote oil."]
+			dependencies: ["682AD0F259F0B68D"]
+			id: "2FE93BF573CF6155"
+			tasks: [{
+				id: "33F79916F82BEC70"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			x: -13.5d
+			y: -23.0d
+			dependencies: ["27B03901B47C9BD7"]
+			id: "682AD0F259F0B68D"
+			tasks: [{
+				id: "7660D1AB929361CE"
+				type: "item"
+				title: "Crude Blast Furnace"
+				icon: "immersiveengineering:blast_furnace"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+		}
+		{
+			title: "Improved Blast Furnace"
+			icon: "immersiveengineering:advanced_blast_furnace"
+			x: -11.5d
+			y: -22.0d
+			subtitle: "Faster blast furnace"
+			dependencies: ["682AD0F259F0B68D"]
+			id: "4B566A616EC3993F"
+			tasks: [
+				{
+					id: "4FABA46F0BF70DDF"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "53D65CD8CA2E1DD2"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+		}
+		{
+			title: "Metal Press"
+			icon: "immersiveengineering:metal_press"
+			x: -6.5d
+			y: -31.0d
+			subtitle: "Automated and cheaper plates!"
+			dependencies: ["45BD5DBBD8BFD524"]
+			id: "13328AC71F94524A"
+			tasks: [
+				{
+					id: "70E1DF5ED593CABB"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+				{
+					id: "4DB22C5AD047D4D6"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "6102FC4DBDDD3909"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "26F11BAE81647DAB"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "7971646DBD1ADA4C"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Engineering blocks"
+			x: -13.5d
+			y: -29.0d
+			dependencies: ["27B03901B47C9BD7"]
+			id: "2C79BB49712368EF"
+			tasks: [
+				{
+					id: "31C460F37696D35D"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+				}
+				{
+					id: "20C00838AC9C6E8C"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4B467749F5FA0C4A"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+				}
+				{
+					id: "188CF51F4A2C56E0"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+				}
+				{
+					id: "3EBA636178C3D0BA"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: -29.0d
+			dependencies: ["2C79BB49712368EF"]
+			id: "45BD5DBBD8BFD524"
+			tasks: [{
+				id: "6F7ECC9B5B0EB612"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			title: "Arc Furnace"
+			icon: "immersiveengineering:arc_furnace"
+			x: -8.5d
+			y: -31.0d
+			dependencies: [
+				"45BD5DBBD8BFD524"
+				"168B495E314D7496"
+			]
+			id: "7FCFC07158A51C61"
+			tasks: [
+				{
+					id: "68AF86AED714138E"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "61F8785F0D0495E7"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "04DBD9EC9B6C832C"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "3BCD28C54FC4F40D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "2973BF7E4F9F9425"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+					count: 6L
+				}
+				{
+					id: "11962D35380A88D3"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "299FE5477662DF30"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "2890FC6B46B3C37D"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "7647357A4FEB11CC"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+			]
+		}
+		{
+			title: "Industrial Squeezer"
+			icon: "immersiveengineering:squeezer"
+			x: -10.5d
+			y: -31.0d
+			dependencies: [
+				"2C79BB49712368EF"
+				"07BED2FC68DF16EF"
+			]
+			id: "5F492D4BA4E9A7FB"
+			tasks: [
+				{
+					id: "2A419CD80EBC625C"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "4FC2483E614213B7"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+				{
+					id: "34B21F59084735E0"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "5A0B05D08F460FA7"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "630CE56A14DBEA28"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "1EF143A382A366FB"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "549729569CEC9491"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: -24.0d
+			dependencies: ["2FE93BF573CF6155"]
+			id: "5E7EE688E2BB4EFE"
+			tasks: [{
+				id: "1185113DD5CA8F4B"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -26.0d
+			dependencies: ["2FE93BF573CF6155"]
+			id: "07BED2FC68DF16EF"
+			tasks: [{
+				id: "6904C7F006807491"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -27.0d
+			dependencies: ["07BED2FC68DF16EF"]
+			id: "142F9C93065BE104"
+			tasks: [{
+				id: "5DBCE07FC2BE119B"
+				type: "item"
+				item: "immersiveengineering:watermill"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -25.0d
+			dependencies: ["07BED2FC68DF16EF"]
+			id: "5C3E5D6F22F83325"
+			tasks: [{
+				id: "331CD714B3632DC0"
+				type: "item"
+				item: "immersiveengineering:windmill"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -33.0d
+			dependencies: [
+				"5E7EE688E2BB4EFE"
+				"1CAA0BC6642721FB"
+			]
+			id: "0057C41CCE202013"
+			tasks: [{
+				id: "772B5152531105A0"
+				type: "item"
+				item: "immersiveengineering:dust_coke"
+			}]
+		}
+		{
+			title: "Crusher"
+			icon: "immersiveengineering:crusher"
+			x: -12.5d
+			y: -31.0d
+			dependencies: ["2C79BB49712368EF"]
+			id: "1CAA0BC6642721FB"
+			tasks: [
+				{
+					id: "63D6039920ECC1E0"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "2EF7E7E54DEF381E"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "602ABE3CD81BCE74"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+				{
+					id: "4860319CFAD0751A"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "26327EA1B42D884D"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -33.0d
+			dependencies: [
+				"0057C41CCE202013"
+				"5F492D4BA4E9A7FB"
+			]
+			id: "7B415C58D5DB3489"
+			tasks: [{
+				id: "14FC044CAA5FB6CD"
+				type: "item"
+				item: "immersiveengineering:dust_hop_graphite"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -35.0d
+			dependencies: ["7B415C58D5DB3489"]
+			id: "4481F99EFE817537"
+			tasks: [{
+				id: "4542A63220BC5CFB"
+				type: "item"
+				item: "immersiveengineering:ingot_hop_graphite"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -33.0d
+			dependencies: ["4481F99EFE817537"]
+			id: "168B495E314D7496"
+			tasks: [{
+				id: "221C7DAE15059114"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -13.5d
+			y: -27.0d
+			dependencies: [
+				"27B03901B47C9BD7"
+				"07BED2FC68DF16EF"
+			]
+			id: "72AF1C57E52508C6"
+			tasks: [{
+				id: "040CF8DC1838F9D6"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+		}
+		{
+			title: "Automated Engineer's Workbench"
+			icon: "immersiveengineering:auto_workbench"
+			x: -11.5d
+			y: -28.0d
+			dependencies: [
+				"72AF1C57E52508C6"
+				"45BD5DBBD8BFD524"
+			]
+			id: "1A75810033EE62B3"
+			tasks: [
+				{
+					id: "07099BAAB7ABEB89"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "0FA8EF959CB1FBED"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "5499A3692AA8C380"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+				{
+					id: "788D8446E15ACE70"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "0420E1CA8B9FC71D"
+					type: "item"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					count: 2L
+				}
+				{
+					id: "6B6E5AB6E1E3F82F"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			title: "Modifiers"
+			x: -7.5d
+			y: 0.5d
+			subtitle: "The real tinkerer"
+			description: ["Create more advanced tools and grants greater access to modifiers for your tools."]
+			dependencies: [
+				"3F596B27F04337A0"
+				"7F8A7D9B83064DFD"
+			]
+			id: "6C5367390ADF560C"
+			tasks: [{
+				id: "37E3C6237FF4D8AA"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: {
+						texture: "mekanism:block_bronze"
+					}
+				}
+			}]
+		}
+		{
+			title: "Fissile Fuel"
+			icon: "thermal:crude_oil_bucket"
+			x: -8.5d
+			y: -19.0d
+			shape: "square"
+			subtitle: "Go to the Fissile Fuel quest line"
+			dependencies: ["4091345B27E39220"]
+			id: "4AE8DF4FEF2E95E4"
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "From the Induction Cells quest line"
+			dependencies: ["516644E0D5CBBEC1"]
+			id: "02A96FCA3E6A7A46"
+			tasks: [{
+				id: "133203FC434623B8"
+				type: "item"
+				item: "mekanism:ultimate_induction_cell"
+			}]
+		}
+		{
+			title: "QIO"
+			icon: "mekanism:qio_drive_array"
+			x: 5.5d
+			y: -19.0d
+			shape: "square"
+			subtitle: "Go to the Storage quest line."
+			dependencies: ["3A74E59F0B6886EE"]
+			id: "1C8827C29FBFD858"
+		}
+		{
+			title: "Refined Storage"
+			icon: "refinedstorage:controller"
+			x: 3.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Go to the Storage quest line."
+			dependencies: ["1B9DC0B1687AAAB7"]
+			id: "393B8D73D632BD54"
+		}
+		{
+			title: "Applied Energistics 2"
+			icon: "appliedenergistics2:controller"
+			x: 5.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Go to the Storage quest line."
+			dependencies: ["1B9DC0B1687AAAB7"]
+			id: "0AE0C0E474F0C126"
+		}
+		{
+			title: "Simple Storage Network"
+			icon: "storagenetwork:master"
+			x: 2.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Go to the Storage quest line."
+			dependencies: ["1B9DC0B1687AAAB7"]
+			id: "3D46E4AC60F06E28"
+		}
+		{
+			title: "Chaos fragments"
+			x: 9.5d
+			y: 7.0d
+			dependencies: [
+				"0B5041BDB3116C4A"
+				"642A06AFDF56560C"
+			]
+			dependency_requirement: "one_completed"
+			id: "1231647D5458DAFF"
+			tasks: [
+				{
+					id: "3CC3203732640F27"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+				}
+				{
+					id: "7784EB277280FDEE"
+					type: "item"
+					item: "draconicevolution:large_chaos_frag"
+				}
+				{
+					id: "22CD996C18DA9C8D"
+					type: "item"
+					item: "draconicevolution:chaos_shard"
+				}
+			]
+		}
+		{
+			title: "Turbine"
+			icon: "mekanismgenerators:turbine_blade"
+			x: -6.5d
+			y: -21.0d
+			shape: "square"
+			subtitle: "Go to the Power generation quest line."
+			dependencies: ["51301603B2EE2C3B"]
+			id: "212DAA0C01B8C1CB"
+		}
+		{
+			title: "Flux Networks"
+			icon: "fluxnetworks:flux_dust"
+			x: -10.5d
+			y: 11.5d
+			shape: "square"
+			subtitle: "Go to the Power generation quest line."
+			dependencies: ["3FF3F5654F5E53C6"]
+			id: "6E7BE976538047A9"
+		}
+		{
+			title: "Induction Cells"
+			icon: "mekanism:thermal_evaporation_controller"
+			x: -5.5d
+			y: -9.0d
+			shape: "square"
+			subtitle: "Go to the Induction Cells quest line."
+			dependencies: [
+				"3910A1AB76A415E1"
+				"250ECF0D477E6738"
+			]
+			id: "3EDF3A28786CE5BF"
+		}
+		{
+			title: "Cyclic!"
+			x: -15.5d
+			y: 38.5d
+			shape: "rsquare"
+			subtitle: "This is only a small part of cyclic. Take a look at @cyclic to find everything."
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "63C69AD421E94C79"
+			tasks: [{
+				id: "191B6736791BE7C8"
+				type: "item"
+				item: "cyclic:solidifier"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 40.5d
+			dependencies: ["63C69AD421E94C79"]
+			id: "2D12C5427D59CDAB"
+			tasks: [{
+				id: "735E29674102972A"
+				type: "item"
+				item: "cyclic:melter"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 38.5d
+			min_required_dependencies: 2
+			dependencies: [
+				"63C69AD421E94C79"
+				"200D32C079B897A1"
+				"3D2B715DE3B8D50A"
+			]
+			id: "7326262AD2FB2D95"
+			tasks: [{
+				id: "5132817C890B1FD4"
+				type: "item"
+				item: "cyclic:gem_amber"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 38.5d
+			dependencies: [
+				"7326262AD2FB2D95"
+				"55F6CF63B8EE033E"
+			]
+			id: "211444F1FCAE921F"
+			tasks: [{
+				id: "386EEC8B3A34E7A9"
+				type: "item"
+				item: "cyclic:gem_obsidian"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 40.0d
+			dependencies: ["2D12C5427D59CDAB"]
+			id: "3D2B715DE3B8D50A"
+			tasks: [{
+				id: "6D57FC932EB2A51E"
+				type: "item"
+				item: "cyclic:magma_bucket"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 41.0d
+			dependencies: ["2D12C5427D59CDAB"]
+			id: "200D32C079B897A1"
+			tasks: [{
+				id: "0144603C71286433"
+				type: "item"
+				item: "cyclic:honey_bucket"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 40.5d
+			dependencies: ["2D12C5427D59CDAB"]
+			id: "55F6CF63B8EE033E"
+			tasks: [{
+				id: "2A7FE08D7D9F6A47"
+				type: "item"
+				item: "cyclic:slime_bucket"
+			}]
+		}
+		{
+			title: "Eidolon"
+			x: -15.5d
+			y: 48.5d
+			shape: "rsquare"
+			subtitle: "Please refer to the Ars Ecclesia."
+			description: ["For the bottom path: Every quest is a spoiler for progression, but it's actually quite hard to progress sometimes."]
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "0B93A81666D05E85"
+			tasks: [{
+				id: "35A9BD2D16EFBD21"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+			}]
+		}
+		{
+			title: "Signs"
+			icon: "eidolon:codex"
+			x: -13.5d
+			y: 52.5d
+			subtitle: "The learner"
+			description: ["You create the first two signs by throwing the Ars Ecclesia (or the akashic tome with Ars Ecclesia selected) to a Cleric (brewing stand villager) and a witch. The villager isn't needed though since there aren't any uses."]
+			dependencies: ["0B93A81666D05E85"]
+			id: "6EC5A55DDA0ADDEE"
+			tasks: [{
+				id: "418D3A66B2D92773"
+				type: "checkmark"
+				title: "Completed"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 46.5d
+			subtitle: "Everything to the right is made by the Crucible"
+			description: ["Use the book as a tutorial. Btw please be quick while crafting"]
+			dependencies: ["0B93A81666D05E85"]
+			id: "43AAF6FBD74770FA"
+			tasks: [{
+				id: "474A7D079F754D31"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 50.5d
+			subtitle: "Everything to the right is made by rituals"
+			description: ["Check the book for more info"]
+			dependencies: ["0B93A81666D05E85"]
+			id: "3CCB39DCCB9C04FC"
+			tasks: [
+				{
+					id: "3E6F3E1CC8F179D5"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+				{
+					id: "60C735F11DF1C034"
+					type: "item"
+					item: "eidolon:stone_hand"
+				}
+				{
+					id: "2460B925B9469A79"
+					type: "item"
+					item: "eidolon:necrotic_focus"
+				}
+			]
+		}
+		{
+			x: -13.5d
+			y: 48.5d
+			subtitle: "Everything to the right is made by the Workbench"
+			dependencies: ["0B93A81666D05E85"]
+			id: "226D3E876989A29D"
+			tasks: [{
+				id: "4BAFB3FCB2C7304D"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 50.5d
+			subtitle: "The Crystallisation ritual."
+			dependencies: ["3CCB39DCCB9C04FC"]
+			id: "3CE7BBA6BB33CBA6"
+			tasks: [{
+				id: "27FDD18FAE026EAE"
+				type: "item"
+				item: "eidolon:soul_shard"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 46.5d
+			dependencies: ["3CE7BBA6BB33CBA6"]
+			id: "09A4C352BDD1ED02"
+			tasks: [{
+				id: "068D621F88F6E815"
+				type: "item"
+				item: "eidolon:lesser_soul_gem"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 46.5d
+			dependencies: [
+				"3CE7BBA6BB33CBA6"
+				"7FC3321C8FB549DA"
+			]
+			id: "3C3E726BC0BD4912"
+			tasks: [{
+				id: "624FDDE51D02725E"
+				type: "item"
+				item: "eidolon:shadow_gem"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 46.5d
+			dependencies: ["3CE7BBA6BB33CBA6"]
+			id: "16C8B612CCD54509"
+			tasks: [{
+				id: "5A4CDEC3B709E963"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 50.5d
+			subtitle: "A ritual of Sanguine."
+			description: ["Go to the competitve quest line for more info about this item"]
+			dependencies: ["3C3E726BC0BD4912"]
+			id: "541229821093F434"
+			tasks: [{
+				id: "6E017AD698FC867F"
+				type: "item"
+				item: {
+					id: "eidolon:sapping_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 50.5d
+			subtitle: "A ritual of Sanguine."
+			description: ["Go to the competitve quest line for more info about this item"]
+			dependencies: [
+				"2AB6BBAE6B6E33AE"
+				"09A4C352BDD1ED02"
+			]
+			id: "48DB94DF7597F81F"
+			tasks: [{
+				id: "5EC4DEFD5628AD67"
+				type: "item"
+				item: "eidolon:sanguine_amulet"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 44.5d
+			subtitle: "Everything to the right is made by the Crafing table"
+			dependencies: ["0B93A81666D05E85"]
+			id: "6692111F3E53F4BC"
+			tasks: [{
+				id: "111D9812E3F0C1D7"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 44.5d
+			dependencies: [
+				"16C8B612CCD54509"
+				"14F6667E43290CAB"
+			]
+			id: "2AB6BBAE6B6E33AE"
+			tasks: [{
+				id: "294F09CEBE3937DA"
+				type: "item"
+				item: "eidolon:basic_amulet"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 42.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "14F6667E43290CAB"
+			tasks: [{
+				id: "17B901346D8F1BB9"
+				type: "item"
+				item: "botania:manaweave_cloth"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 46.0d
+			dependencies: [
+				"43AAF6FBD74770FA"
+				"2D702048F5F6A571"
+			]
+			id: "7FC3321C8FB549DA"
+			tasks: [{
+				id: "0F4BA5E3E3AF518E"
+				type: "item"
+				item: "eidolon:death_essence"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 42.5d
+			subtitle: "Those pesky brutes"
+			dependencies: ["5B88785277B2E113"]
+			id: "2D702048F5F6A571"
+			tasks: [{
+				id: "25FB90C4DFDD1CB4"
+				type: "item"
+				item: "eidolon:zombie_heart"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 48.5d
+			dependencies: ["3C3E726BC0BD4912"]
+			id: "56A70D410F2EA39C"
+			tasks: [{
+				id: "64FD9155ABAD9782"
+				type: "item"
+				item: "eidolon:wicked_weave"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 47.0d
+			dependencies: [
+				"4E4E8FE24F7CBCD4"
+				"43AAF6FBD74770FA"
+			]
+			id: "4E480CF7C7650C0F"
+			tasks: [{
+				id: "2DA5FEFE125EC80D"
+				type: "item"
+				item: "eidolon:ender_calx"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 42.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "4E4E8FE24F7CBCD4"
+			tasks: [{
+				id: "02F8B7A1FE4F19BA"
+				type: "item"
+				item: "eidolon:enchanted_ash"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 46.5d
+			dependencies: ["4E480CF7C7650C0F"]
+			id: "04372B10269B5114"
+			tasks: [{
+				id: "740AA4523A94C66E"
+				type: "item"
+				item: "eidolon:warped_sprouts"
+				consume_items: false
+			}]
+		}
+		{
+			x: -9.5d
+			y: 42.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "72C63300939B52CA"
+			tasks: [{
+				id: "2A77761CD0A3FFB4"
+				type: "item"
+				item: "eidolon:wraith_heart"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 44.5d
+			dependencies: ["6692111F3E53F4BC"]
+			id: "7B683D1C787333F0"
+			tasks: [{
+				id: "42FAB5734CA54AD6"
+				type: "item"
+				item: "eidolon:basic_belt"
+			}]
+		}
+		{
+			title: "Other Combat items."
+			icon: "eidolon:glass_hand"
+			x: -5.5d
+			y: 48.5d
+			description: ["With the items shown you can create almost every combat item from Eidolon. Check the Competitive gear quest line for tips."]
+			dependencies: ["5B88785277B2E113"]
+			id: "60D1D530DF46FA36"
+			tasks: [{
+				id: "2ACA4ED19C9783FC"
+				type: "checkmark"
+				title: "Completed"
+			}]
+		}
+		{
+			title: "Wooden Altar"
+			icon: "eidolon:wooden_altar"
+			x: -11.5d
+			y: 52.5d
+			subtitle: "The altar is almost done"
+			description: ["Make a 2*3 (or larger) table with the altar and place the other items above."]
+			dependencies: ["6EC5A55DDA0ADDEE"]
+			id: "20F12002F0B67E89"
+			tasks: [
+				{
+					id: "1F6C0D1923151FE1"
+					type: "item"
+					item: "eidolon:wooden_altar"
+					count: 6L
+				}
+				{
+					id: "300AEFC5EE867858"
+					type: "item"
+					item: "eidolon:straw_effigy"
+				}
+				{
+					id: "484A720A2B9B9411"
+					type: "item"
+					item: "eidolon:goblet"
+				}
+				{
+					id: "44E5E6E9333DCAFC"
+					type: "checkmark"
+					title: "Skull"
+				}
+				{
+					id: "68DCB50FDF7389D4"
+					type: "checkmark"
+					title: "Flower"
+				}
+				{
+					id: "1B52CA5B709B90AB"
+					type: "checkmark"
+					title: "Lighting"
+				}
+			]
+		}
+		{
+			title: "Blood Sign"
+			icon: "eidolon:codex"
+			x: -9.5d
+			y: 52.5d
+			subtitle: "Become a prayer"
+			description: ["Chant with three wicked signs every day until you gained the blood sign."]
+			dependencies: ["20F12002F0B67E89"]
+			id: "055C4397A83A673C"
+			tasks: [{
+				id: "5CECE1F17D6D7D15"
+				type: "checkmark"
+				title: "Blood Sign"
+			}]
+		}
+		{
+			icon: "eidolon:codex"
+			x: -7.5d
+			y: 52.5d
+			subtitle: "A sacrifice must be made"
+			description: ["Kill an animal near your goblet and chant with the pattern \"Wicked, Blood, Wicked\""]
+			dependencies: ["055C4397A83A673C"]
+			id: "6D6A6F72E9A2250E"
+			tasks: [{
+				id: "342F70348309E6D9"
+				type: "checkmark"
+				title: "Soul Sign"
+			}]
+		}
+		{
+			icon: "eidolon:stone_altar"
+			x: -3.5d
+			y: 52.5d
+			subtitle: "The true prayer"
+			dependencies: ["7632531414955225"]
+			id: "3B44D78D7627653B"
+			tasks: [
+				{
+					id: "312A5DA9E8235033"
+					type: "item"
+					item: "eidolon:stone_altar"
+				}
+				{
+					id: "5F619B2567CDCAC3"
+					type: "item"
+					item: "eidolon:unholy_effigy"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 52.5d
+			dependencies: ["6D6A6F72E9A2250E"]
+			id: "7632531414955225"
+			tasks: [{
+				id: "026AE8685C040B6A"
+				type: "item"
+				item: "eidolon:unholy_symbol"
+			}]
+		}
+		{
+			icon: "eidolon:codex"
+			x: -1.5d
+			y: 52.5d
+			subtitle: "The true believer"
+			description: [
+				"Kill a villager near the goblet and chant \"Blood, Wicked, Blood, Soul\""
+				"There are sadly no use for this sign"
+			]
+			dependencies: ["3B44D78D7627653B"]
+			id: "2BA78D3FA1A251D2"
+			tasks: [{
+				id: "0A46497DFB37FE42"
+				type: "checkmark"
+				title: "Mind Sign"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: ["14ABC1B731307C5D"]
+			id: "228680E963DDB071"
+			tasks: [{
+				id: "59FCB10EB4262F90"
+				type: "item"
+				item: "forbidden_arcanus:mundabitur_dust"
+			}]
+		}
+		{
+			title: "Tyr armor"
+			icon: {
+				id: "forbidden_arcanus:tyr_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 0.5d
+			subtitle: "Yes. Make this"
+			dependencies: ["228680E963DDB071"]
+			id: "00A7273FD1C4597E"
+			tasks: [{
+				id: "082379DC07878720"
+				type: "checkmark"
+				title: "Completed"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.5d
+			subtitle: "You can also repair these tools with sharpening kits"
+			dependencies: ["7F8A7D9B83064DFD"]
+			id: "4D453B9D257E8C18"
+			tasks: [{
+				id: "47AF1218210ADF5E"
+				type: "item"
+				item: {
+					id: "tconstruct:repair_kit"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:wood"
+					}
+				}
+			}]
+		}
+		{
+			title: "Draconic reactor"
+			icon: "draconicevolution:reactor_core"
+			x: 0.5d
+			y: 22.5d
+			shape: "square"
+			subtitle: "Go to the Power Generation quest line"
+			dependencies: ["721FC85F982DC1E2"]
+			id: "61391A8D3741625B"
+		}
+	]
+}

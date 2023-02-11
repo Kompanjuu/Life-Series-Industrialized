@@ -1,0 +1,827 @@
+{
+	id: "06F7DD4387C1C411"
+	group: ""
+	order_index: 3
+	filename: "power_generation"
+	title: "Power Generation"
+	icon: "powah:reactor_nitro"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Powah!"
+			x: -3.5d
+			y: -1.0d
+			shape: "rsquare"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "23D899FD6A8DCF33"
+			tasks: [{
+				id: "4D1400D251359902"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			title: "Energizing materials"
+			x: 0.5d
+			y: -1.0d
+			subtitle: "Place rods in a 8 block radius around the orb and give the rods power. The rods will give the orb energy when items are given to the orb."
+			dependencies: ["5C585A67B750B383"]
+			id: "2CE354CEA0C4A622"
+			tasks: [
+				{
+					id: "1A9E6C506F767B6D"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+				{
+					id: "49CF45C64E6C346A"
+					type: "item"
+					item: "powah:energizing_rod_starter"
+				}
+			]
+		}
+		{
+			title: "Reactor"
+			x: 0.5d
+			y: 1.0d
+			subtitle: "High efficiency power generation"
+			dependencies: [
+				"2CE354CEA0C4A622"
+				"23D899FD6A8DCF33"
+			]
+			id: "4D8DEE0F4318BB89"
+			tasks: [
+				{
+					id: "26E5A2DC88004BD8"
+					type: "item"
+					item: "powah:reactor_starter"
+					count: 36L
+				}
+				{
+					id: "1EFCE85CDB14E894"
+					type: "item"
+					item: "powah:reactor_basic"
+					count: 36L
+				}
+				{
+					id: "54458C146759A624"
+					type: "item"
+					item: "powah:reactor_hardened"
+					count: 36L
+				}
+				{
+					id: "1BD72726A555A925"
+					type: "item"
+					item: "powah:reactor_blazing"
+					count: 36L
+				}
+				{
+					id: "26D5F0753F8FB021"
+					type: "item"
+					item: "powah:reactor_niotic"
+					count: 36L
+				}
+				{
+					id: "3C1E8151DE1C4480"
+					type: "item"
+					item: "powah:reactor_spirited"
+					count: 36L
+				}
+				{
+					id: "25F8A5553860E5E2"
+					type: "item"
+					item: "powah:reactor_nitro"
+					count: 36L
+				}
+			]
+		}
+		{
+			title: "Other generators"
+			x: 2.5d
+			y: -3.0d
+			dependencies: [
+				"23D899FD6A8DCF33"
+				"2CE354CEA0C4A622"
+			]
+			id: "2DBC74F3D676D051"
+			tasks: [
+				{
+					id: "3820ADF4DAEB26DF"
+					type: "item"
+					item: "powah:furnator_starter"
+				}
+				{
+					id: "6CF3B4070D07B79B"
+					type: "item"
+					item: "powah:thermo_generator_starter"
+				}
+				{
+					id: "3881F3DD30075C83"
+					type: "item"
+					item: "powah:magmator_starter"
+				}
+				{
+					id: "16F8557CE9D227A6"
+					type: "item"
+					item: "powah:solar_panel_starter"
+				}
+			]
+		}
+		{
+			title: "Turbine"
+			icon: "mekanismgenerators:turbine_blade"
+			x: 2.5d
+			y: 15.0d
+			subtitle: "To convert your steam or superheated sodium back to liduid form you might need the Industrial Turbine. The turbine also creates some RF. Btw this is the smallest size. Link to how to build: https://ftb.fandom.com/wiki/Fission_Reactor_(Mekanism)#Construction"
+			dependencies: ["212DAA0C01B8C1CB"]
+			id: "0082BE51514BCF97"
+			tasks: [
+				{
+					id: "1C9A0FDAE9973EFB"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+					count: 130L
+				}
+				{
+					id: "7BA2E4CDBED09A89"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+					count: 32L
+				}
+				{
+					id: "7082E4DBADB73BF2"
+					type: "item"
+					item: "mekanismgenerators:saturating_condenser"
+					count: 16L
+				}
+				{
+					id: "61EAFCC1A27BFB46"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+					count: 8L
+				}
+				{
+					id: "4A5B205D47605244"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+					count: 4L
+				}
+				{
+					id: "635FE4D0ADC8C9EB"
+					type: "item"
+					item: "mekanismgenerators:rotational_complex"
+				}
+			]
+		}
+		{
+			title: "Reactor (Basic)"
+			x: -1.5d
+			y: 5.0d
+			dependencies: ["5D0409AC25F908E9"]
+			id: "7BC2E9339A9D478A"
+			tasks: [{
+				id: "56D60CF1D71C0260"
+				type: "item"
+				item: "bigreactors:basic_reactorcasing"
+			}]
+		}
+		{
+			title: "Reactor (Reinforced)"
+			x: 0.5d
+			y: 5.0d
+			dependencies: ["7BC2E9339A9D478A"]
+			id: "609E66DE81F70A38"
+			tasks: [{
+				id: "193CFEDDF8A90C88"
+				type: "item"
+				item: "bigreactors:reinforced_reactorcasing"
+			}]
+		}
+		{
+			title: "Extreme Reactors!"
+			x: -3.5d
+			y: 5.0d
+			shape: "rsquare"
+			subtitle: "Please read the manual."
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "5D0409AC25F908E9"
+			tasks: [{
+				id: "3D61D50A730813CC"
+				type: "item"
+				item: "bigreactors:graphite_ingot"
+			}]
+		}
+		{
+			title: "Turbine (Basic)"
+			x: -1.5d
+			y: 7.0d
+			dependencies: ["7BC2E9339A9D478A"]
+			id: "19DE7D3DF47AF541"
+			tasks: [{
+				id: "45910C3257BF6306"
+				type: "item"
+				item: "bigreactors:basic_turbinecasing"
+			}]
+		}
+		{
+			title: "Turbine (Reinforced)"
+			x: 0.5d
+			y: 7.0d
+			dependencies: [
+				"609E66DE81F70A38"
+				"19DE7D3DF47AF541"
+			]
+			id: "0E2FDD824E7AA7CD"
+			tasks: [{
+				id: "2939DC1EA76A9108"
+				type: "item"
+				item: "bigreactors:reinforced_turbinecasing"
+			}]
+		}
+		{
+			title: "Reprocessor"
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["7BC2E9339A9D478A"]
+			id: "2BF0763D6C83350E"
+			tasks: [{
+				id: "66635AE43AEB9684"
+				type: "item"
+				item: "bigreactors:reprocessorcasing"
+			}]
+		}
+		{
+			title: "Fluidizer"
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["2BF0763D6C83350E"]
+			id: "446B92D70E5B8243"
+			tasks: [{
+				id: "3872B5ADB78F1789"
+				type: "item"
+				item: "bigreactors:fluidizercasing"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.0d
+			dependencies: ["4A36F9C8B4C934DE"]
+			id: "08690FE733D83227"
+			tasks: [{
+				id: "4D9438B132C18A7D"
+				type: "item"
+				item: "solarflux:sp_1"
+			}]
+		}
+		{
+			title: "Solar Flux Reborn!"
+			x: -3.5d
+			y: -5.0d
+			shape: "rsquare"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "4A36F9C8B4C934DE"
+			tasks: [{
+				id: "4596A52526EA1C6A"
+				type: "item"
+				item: "solarflux:mirror"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["08690FE733D83227"]
+			id: "16FB6F114BD84545"
+			tasks: [{
+				id: "6AA83A735FB53B56"
+				type: "item"
+				item: "solarflux:sp_2"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			dependencies: [
+				"16FB6F114BD84545"
+				"7B652BD87675479B"
+			]
+			id: "79D6ECB4A9067D75"
+			tasks: [{
+				id: "235B4516522EA936"
+				type: "item"
+				item: "solarflux:sp_3"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.0d
+			dependencies: ["4A36F9C8B4C934DE"]
+			id: "7B652BD87675479B"
+			tasks: [{
+				id: "40D5BF2683613FAE"
+				type: "item"
+				item: "solarflux:photovoltaic_cell_1"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -7.0d
+			dependencies: ["7B652BD87675479B"]
+			id: "0AC9E0666FD8AEFB"
+			tasks: [{
+				id: "6F28DBC6805DCE96"
+				type: "item"
+				item: "solarflux:photovoltaic_cell_2"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			dependencies: ["0AC9E0666FD8AEFB"]
+			id: "6F5D4E5A3E9C29BD"
+			tasks: [{
+				id: "3C797A8844200758"
+				type: "item"
+				item: "solarflux:photovoltaic_cell_3"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -7.0d
+			dependencies: [
+				"6F5D4E5A3E9C29BD"
+				"6AF0E4C8419EE06E"
+			]
+			id: "390A7CE132ECB2A6"
+			tasks: [{
+				id: "06DD8A7EE26DCABC"
+				type: "item"
+				item: "solarflux:photovoltaic_cell_4"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -7.0d
+			dependencies: [
+				"390A7CE132ECB2A6"
+				"5EFCBECCA41CD2C7"
+			]
+			id: "2FF4AF952473AA5B"
+			tasks: [{
+				id: "5FF2AC7F6E354FF9"
+				type: "item"
+				item: "solarflux:photovoltaic_cell_5"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -7.0d
+			dependencies: [
+				"2FF4AF952473AA5B"
+				"4D8200450D51371D"
+			]
+			id: "72BA8BC4F0620B1C"
+			tasks: [{
+				id: "36EA9BC5710463D5"
+				type: "item"
+				item: "solarflux:photovoltaic_cell_6"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -9.0d
+			dependencies: ["5EFCBECCA41CD2C7"]
+			id: "4D8200450D51371D"
+			tasks: [{
+				id: "4B5DFC396ADA5FD5"
+				type: "item"
+				item: "solarflux:ender_glass"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -9.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "5EFCBECCA41CD2C7"
+			tasks: [{
+				id: "142BBC6E101811CC"
+				type: "item"
+				item: "solarflux:emerald_glass"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -9.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "6AF0E4C8419EE06E"
+			tasks: [{
+				id: "0061049014114135"
+				type: "item"
+				item: "solarflux:blazing_coating"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			dependencies: [
+				"79D6ECB4A9067D75"
+				"0AC9E0666FD8AEFB"
+			]
+			id: "7AC177AFD609ED75"
+			tasks: [{
+				id: "47E22E0B1BA83D9F"
+				type: "item"
+				item: "solarflux:sp_4"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.0d
+			dependencies: [
+				"7AC177AFD609ED75"
+				"6F5D4E5A3E9C29BD"
+			]
+			id: "3641BE8A793E59D9"
+			tasks: [{
+				id: "21554979C04D7200"
+				type: "item"
+				item: "solarflux:sp_5"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.0d
+			dependencies: [
+				"3641BE8A793E59D9"
+				"390A7CE132ECB2A6"
+			]
+			id: "0FB2A03A8323642B"
+			tasks: [{
+				id: "02E7EAF7AF0C3FA8"
+				type: "item"
+				item: "solarflux:sp_6"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -5.0d
+			dependencies: [
+				"2FF4AF952473AA5B"
+				"0FB2A03A8323642B"
+			]
+			id: "75B2BD9570AAD16B"
+			tasks: [{
+				id: "2128EBBB5A2C1288"
+				type: "item"
+				item: "solarflux:sp_7"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -5.0d
+			dependencies: [
+				"72BA8BC4F0620B1C"
+				"75B2BD9570AAD16B"
+			]
+			id: "66AD463F072EC38C"
+			tasks: [{
+				id: "6E61BFB8F54FE687"
+				type: "item"
+				item: "solarflux:sp_8"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -5.0d
+			dependencies: ["66AD463F072EC38C"]
+			id: "5568EFFC51D95F09"
+			tasks: [{
+				id: "2515A212BEEBD0F4"
+				type: "item"
+				item: "solarflux:sp_de.wyvern"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -5.0d
+			dependencies: ["5568EFFC51D95F09"]
+			id: "3BE14910EC675FA3"
+			tasks: [{
+				id: "5E39C29D8916AD3B"
+				type: "item"
+				item: "solarflux:sp_de.draconic"
+			}]
+		}
+		{
+			x: 18.5d
+			y: -5.0d
+			dependencies: ["3BE14910EC675FA3"]
+			id: "6D936C9A353FAFFC"
+			tasks: [{
+				id: "2E780E709137E936"
+				type: "item"
+				item: "solarflux:sp_de.chaotic"
+			}]
+		}
+		{
+			title: "Energized Materials"
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["2CE354CEA0C4A622"]
+			id: "39EEB60A646637A5"
+			tasks: [
+				{
+					id: "04633F4F603F862D"
+					type: "item"
+					item: "powah:steel_energized"
+				}
+				{
+					id: "38B04CC2DEBE7D8A"
+					type: "item"
+					item: "powah:crystal_blazing"
+				}
+				{
+					id: "2873B0BEE3587605"
+					type: "item"
+					item: "powah:crystal_niotic"
+				}
+				{
+					id: "3AE311D5F6F1CE66"
+					type: "item"
+					item: "powah:crystal_spirited"
+				}
+				{
+					id: "26ACAC7EF7FA068B"
+					type: "item"
+					item: "powah:crystal_nitro"
+				}
+			]
+		}
+		{
+			title: "Energy transfer and storage"
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["23D899FD6A8DCF33"]
+			id: "5C585A67B750B383"
+			tasks: [
+				{
+					id: "524C9305F1E96314"
+					type: "item"
+					item: "powah:energy_cell_starter"
+				}
+				{
+					id: "22857E517A606CF8"
+					type: "item"
+					item: "powah:energy_cable_starter"
+				}
+				{
+					id: "1BA488F66F7D9D6E"
+					type: "item"
+					item: "powah:ender_cell_starter"
+				}
+				{
+					id: "6F9CB1A575A1C88F"
+					type: "item"
+					item: "powah:ender_gate_starter"
+				}
+			]
+		}
+		{
+			title: "Functional blocks"
+			x: 0.5d
+			y: -3.0d
+			dependencies: [
+				"23D899FD6A8DCF33"
+				"2CE354CEA0C4A622"
+			]
+			id: "74BB4E024D5AD654"
+			tasks: [
+				{
+					id: "1EC5C88FB4B3FB64"
+					type: "item"
+					item: "powah:energy_hopper_starter"
+				}
+				{
+					id: "3885BC95BEAEC796"
+					type: "item"
+					item: "powah:energy_discharger_starter"
+				}
+				{
+					id: "3697A4C7A213AACA"
+					type: "item"
+					item: "powah:player_transmitter_starter"
+				}
+			]
+		}
+		{
+			title: "Flux Networks"
+			x: -3.5d
+			y: 11.0d
+			shape: "rsquare"
+			dependencies: ["6E7BE976538047A9"]
+			size: 1.5d
+			id: "043A5EFFDBFF0C48"
+			tasks: [{
+				id: "717240BA9657EB2D"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+		}
+		{
+			title: "I/O"
+			x: -1.5d
+			y: 11.0d
+			dependencies: ["043A5EFFDBFF0C48"]
+			id: "3D50DA6431C3B73E"
+			tasks: [
+				{
+					id: "4CB1E911EE7F4E6E"
+					type: "item"
+					item: "fluxnetworks:flux_plug"
+				}
+				{
+					id: "25E95B22EBB15B1E"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 11.0d
+			dependencies: ["3D50DA6431C3B73E"]
+			id: "76DE0C482AEFF755"
+			tasks: [{
+				id: "4FC51503F1005DFB"
+				type: "item"
+				item: "fluxnetworks:flux_controller"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 9.0d
+			dependencies: ["3D50DA6431C3B73E"]
+			id: "2835593C5389F564"
+			tasks: [{
+				id: "3151CAE09AEB3503"
+				type: "item"
+				item: "fluxnetworks:flux_configurator"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 13.0d
+			dependencies: ["3D50DA6431C3B73E"]
+			id: "66652FBC6F00D475"
+			tasks: [{
+				id: "22E5C568BF22510B"
+				type: "item"
+				item: "fluxnetworks:basic_flux_storage"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 13.0d
+			dependencies: ["66652FBC6F00D475"]
+			id: "039F3A0AA19EDF16"
+			tasks: [{
+				id: "603D3C101FC172B6"
+				type: "item"
+				item: "fluxnetworks:herculean_flux_storage"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 13.0d
+			dependencies: ["039F3A0AA19EDF16"]
+			id: "0F144BD72EFB7183"
+			tasks: [{
+				id: "5C18B087949D3804"
+				type: "item"
+				item: "fluxnetworks:gargantuan_flux_storage"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 15.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "19C26356385A85B8"
+			tasks: [{
+				id: "4629549F453C04CC"
+				type: "item"
+				item: "mekanismgenerators:solar_generator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 15.0d
+			dependencies: ["19C26356385A85B8"]
+			id: "5C42FE26DB3473D8"
+			tasks: [{
+				id: "588996BEDE84BB95"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+			}]
+		}
+		{
+			title: "Immersive Engineering"
+			x: -3.5d
+			y: 21.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "011E22FCB57F3B2F"
+			tasks: [
+				{
+					id: "4713D35C28A55328"
+					type: "item"
+					item: "immersiveengineering:watermill"
+				}
+				{
+					id: "311F2EB85DFE8209"
+					type: "item"
+					item: "immersiveengineering:windmill"
+				}
+				{
+					id: "36B286A0CC531469"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 15.0d
+			dependencies: ["5B88785277B2E113"]
+			id: "18782780BAA6C221"
+			tasks: [{
+				id: "000F45FC313E0D5F"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 19.0d
+			description: ["Use ponder thanks"]
+			dependencies: ["5B88785277B2E113"]
+			id: "65767A34C576251D"
+			tasks: [
+				{
+					id: "1B7165E21E5EAFBE"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "4F2DEF7C4D2DD7E1"
+					type: "item"
+					item: "createaddition:electric_motor"
+				}
+			]
+		}
+		{
+			title: "Induction Cells"
+			icon: "mekanism:ultimate_induction_cell"
+			x: -3.5d
+			y: 17.0d
+			shape: "square"
+			subtitle: "Go to the Induction Cells quest line."
+			dependencies: ["5B88785277B2E113"]
+			id: "28E54A99C03E3E0F"
+		}
+		{
+			x: -3.5d
+			y: 23.0d
+			subtitle: "Refer to the book"
+			description: ["Massive power generation"]
+			dependencies: ["721FC85F982DC1E2"]
+			id: "49A549D56A87A7D6"
+			tasks: [
+				{
+					id: "7682DE0B26EBA2D4"
+					type: "item"
+					item: "draconicevolution:reactor_core"
+				}
+				{
+					id: "7AB3913FD0E2E82D"
+					type: "item"
+					item: "draconicevolution:reactor_stabilizer"
+					count: 4L
+				}
+				{
+					id: "523A24541BB88732"
+					type: "item"
+					item: "draconicevolution:reactor_injector"
+				}
+				{
+					id: "2D5826E4614599C3"
+					type: "item"
+					item: "draconicevolution:flux_gate"
+					count: 2L
+				}
+			]
+		}
+	]
+}

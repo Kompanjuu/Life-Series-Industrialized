@@ -1,0 +1,265 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400322%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = top-left
+  x = 160
+  action = movebutton
+  y = 132
+}
+
+customization {
+  identifier = %id=400322%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=604382%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = top-left
+  x = 40
+  action = movebutton
+  y = 152
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = top-left
+  x = 17
+  action = movebutton
+  y = 104
+}
+
+customization {
+  identifier = %id=400382%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400382%
+  action = sethoverlabel
+  label = Not good enough?
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = top-left
+  x = 17
+  action = movebutton
+  y = 128
+}
+
+customization {
+  identifier = %id=502382%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  action = sethoverlabel
+  label = Already?
+}
+
+customization {
+  identifier = %id=376382%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400298%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = top-left
+  x = 17
+  action = movebutton
+  y = 56
+}
+
+customization {
+  identifier = %id=400298%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = bottom-left
+  x = 150
+  action = movebutton
+  y = -331
+}
+
+customization {
+  identifier = %id=400346%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=502346%
+  orientation = mid-centered
+  x = -16
+  action = movebutton
+  y = -10
+}
+
+customization {
+  identifier = %id=376346%
+  orientation = top-left
+  x = 17
+  action = movebutton
+  y = 152
+}
+
+customization {
+  path = kompanjuu.png
+  orientation = bottom-right
+  x = -106
+  width = 100
+  action = addtexture
+  actionid = d507b5b1-99dd-4fe1-951f-5a7dfcac823f1660986666359
+  y = -121
+  height = 100
+}
+
+customization {
+  orientation = bottom-right
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = A modpack by Kompanjuu
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -131
+  width = 126
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = f08224e3-8bb8-4dc0-865f-8f376629638d1660986912547
+  y = -20
+  alignment = left
+  height = 9
+}
+
+customization {
+  orientation = bottom-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = false
+  buttonaction = openlink
+  x = -106
+  width = 100
+  actionid = d319cf2d-6891-4426-898b-2a140ae8280d1660987221612
+  action = addbutton
+  y = -145
+  label = My other projects
+  value = https://linktr.ee/kompanjuu
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton
+  label = Singleplayer
+  loopbackgroundanimations = true
+  hoverlabel = For parasocials
+  x = 17
+  width = 100
+  actionid = 333e738a-ecf4-4c8a-b454-18a0d0b5ded91660989570828
+  action = addbutton
+  y = 56
+  value = com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu:400298
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton
+  label = Multiplayer
+  loopbackgroundanimations = true
+  hoverlabel = U have friends?
+  x = 17
+  width = 100
+  actionid = 84e1ead1-38ef-4a79-b3cb-1b83ec9b5df51660989654166
+  action = addbutton
+  y = 80
+  value = com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu:400322
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = join_last_world
+  label = Continue
+  loopbackgroundanimations = true
+  hoverlabel = Freeze incoming!
+  x = 17
+  width = 100
+  actionid = 7701142c-8120-435c-8cfb-17c1cc4c549c1660989830056
+  action = addbutton
+  y = 32
+  value = null
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  basecolor = #ffff00
+  shadow = true
+  rotation = -20.0
+  scale = 0.7
+  refresh = false
+  bouncing = true
+  vanilla-like = false
+  x = 729
+  actionid = 9adb687f-5ddb-4fcf-a2c0-fb019f526b091660989990605
+  action = addsplash
+  y = 308
+  text = Click me!
+}
+

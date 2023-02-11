@@ -1,0 +1,210 @@
+type = menu
+
+customization-meta {
+  identifier = Credits
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.6
+  source = %n%Credits
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -30
+  width = 61
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = df267dcf-ba1e-4efd-a501-aac4eea2cb191668448733703
+  y = 0
+  alignment = centered
+  height = 33
+}
+
+customization {
+  orientation = bottom-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  x = -100
+  width = 200
+  actionid = 0f82d01b-037d-406c-ac12-d0a91c4b33d61668448882814
+  action = addbutton
+  y = -34
+  label = Back
+  value = net.minecraft.client.gui.screen.MainMenuScreen
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = mid-centered
+  crouching = false
+  x = 80
+  slim = false
+  actionid = aa71f5c5-608b-4c42-84e4-e47566a945b81668448927856
+  action = addentity
+  y = -49
+  scale = 20
+  playername = SkylimitPanda
+  parrot = false
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.3
+  source = %n% Mods
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -104
+  width = 42
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 576f5105-f803-4d66-a58f-29ac6b4b8ed51668448965911
+  y = -58
+  alignment = left
+  height = 26
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = SkylimitPanda %n%%n%Mekanism %n%%n%Botania 
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 2
+  width = 67
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = dc208612-2ef8-4f58-8b6d-1fd41196fd061668448986499
+  y = -62
+  alignment = left
+  height = 53
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.3
+  source = %n% Textures
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -3
+  width = 73
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = f7609da7-d3ff-4005-9a78-54cf6959900a1668448988883
+  y = -90
+  alignment = left
+  height = 27
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = All mod Authors%n%And their free%n%to use policy
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -100
+  width = 81
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 24ee0954-49c3-473f-8381-a777b9f3beca1668449341276
+  y = -33
+  alignment = left
+  height = 40
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.3
+  source = %n% Scripts
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -104
+  width = 58
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 74fcd10b-18f4-4a2c-9a36-7bf09c338c3a1668449377677
+  y = -90
+  alignment = left
+  height = 25
+}
+
+customization {
+  orientation = mid-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = Kompanjuu
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -99
+  width = 59
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 287f1a90-e465-42ea-a090-ecf1d881a0701668449545289
+  y = -65
+  alignment = left
+  height = 14
+}
+
+customization {
+  showname = true
+  orientation = mid-centered
+  crouching = false
+  x = -30
+  slim = false
+  actionid = 6674c12a-5342-48df-ab3d-7a58204b20231668449720452
+  action = addentity
+  y = -40
+  scale = 20
+  playername = Kompanjuu
+  parrot = false
+}
+
+customization {
+  orientation = top-centered
+  enable_scrolling = false
+  shadow = true
+  scale = 0.8
+  source = Everyone that made this modpack possible
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -101
+  width = 200
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = d1688720-4c75-4579-ac3b-484134ae9dcf1668449902414
+  y = 28
+  alignment = centered
+  height = 11
+}
+

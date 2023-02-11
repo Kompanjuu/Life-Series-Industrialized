@@ -1,0 +1,423 @@
+{
+	id: "70734D95E799C254"
+	group: ""
+	order_index: 4
+	filename: "automated_mining"
+	title: "All kinds of Mining"
+	icon: "rftoolsbuilder:shape_card_quarry_clear"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.5d
+			y: -6.5d
+			subtitle: "Easy miner which let's you specify which blocks to mine in a radius. You can say it's broken. But it's actually pretty bad compared to the alternatives."
+			dependencies: ["5B88785277B2E113"]
+			id: "461A330AF8E846FF"
+			tasks: [{
+				id: "0417BC924FE7D05A"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "67C99A05A57E00A9"
+			tasks: [{
+				id: "5E26371943832A2B"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			subtitle: "Mines already existing blocks in the world"
+			dependencies: ["67C99A05A57E00A9"]
+			id: "2224386A3755015F"
+			tasks: [{
+				id: "7C1BCB0DDD132AF9"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			subtitle: "The Void miner. Used to gather various resources from the void. Hover the miner while pressing shift to see all the blocks needed to build it. Visualization availible in the miner. Plaze it with a straight line to bedroch or the void."
+			dependencies: ["1F906A23661A27EB"]
+			id: "5BB85A8733BDC9E6"
+			tasks: [{
+				id: "18C3CE1ABA4E059E"
+				type: "item"
+				item: "envirotech:litherite_void_miner_ccu"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			dependencies: [
+				"03BE82C058EEF13C"
+				"5BB85A8733BDC9E6"
+			]
+			id: "309CCD610D847501"
+			tasks: [{
+				id: "69B2A1DDB6CACDCA"
+				type: "item"
+				item: "envirotech:erodium_void_miner_ccu"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.5d
+			dependencies: [
+				"0BAEDBAF8F711AF5"
+				"309CCD610D847501"
+			]
+			id: "52ABD551EB767CAF"
+			tasks: [{
+				id: "79DCE49677979506"
+				type: "item"
+				item: "envirotech:kyronite_void_miner_ccu"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			dependencies: [
+				"7D8681337B7E6DAE"
+				"52ABD551EB767CAF"
+			]
+			id: "0B6296F5F36FB5B1"
+			tasks: [{
+				id: "76C6C2A7F433DE8F"
+				type: "item"
+				item: "envirotech:pladium_void_miner_ccu"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			dependencies: [
+				"0B6296F5F36FB5B1"
+				"037C19BC82095304"
+			]
+			id: "037FC5C59AC5043B"
+			tasks: [{
+				id: "6D6C988638FB8E2E"
+				type: "item"
+				item: "envirotech:ionite_void_miner_ccu"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -2.5d
+			dependencies: [
+				"7269AA58D1430305"
+				"037FC5C59AC5043B"
+			]
+			id: "2FF999994161289F"
+			tasks: [{
+				id: "1AD93D46FD4E0528"
+				type: "item"
+				item: "envirotech:aethium_void_miner_ccu"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -2.5d
+			dependencies: [
+				"2FF999994161289F"
+				"68A89BB5B80B1FF4"
+			]
+			id: "30A105C474945DBA"
+			tasks: [{
+				id: "1C5F5548C393617C"
+				type: "item"
+				item: "envirotech:nanorite_void_miner_ccu"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -2.5d
+			dependencies: [
+				"4A8B0672E4BCC655"
+				"30A105C474945DBA"
+			]
+			id: "09E84BDBAAFF27B4"
+			tasks: [{
+				id: "23AED1BB5275EB1C"
+				type: "item"
+				item: "envirotech:xerothium_void_miner_ccu"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			subtitle: "All crystals should be obtained from a miner. You can get it by mining with the crystal program. You'll always get every crystal in the previous tiers, and next tier's crystal. You can also craft the next tier."
+			dependencies: ["0E32E67204CE19E4"]
+			id: "1F906A23661A27EB"
+			tasks: [{
+				id: "2FFC13CF6934A85F"
+				type: "item"
+				item: "envirocore:litherite_crystal"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.5d
+			dependencies: [
+				"1F906A23661A27EB"
+				"5BB85A8733BDC9E6"
+			]
+			id: "03BE82C058EEF13C"
+			tasks: [{
+				id: "415816832ABD2825"
+				type: "item"
+				item: "envirocore:erodium_crystal"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			dependencies: [
+				"03BE82C058EEF13C"
+				"309CCD610D847501"
+			]
+			id: "0BAEDBAF8F711AF5"
+			tasks: [{
+				id: "6B54F3C8CEB69BD8"
+				type: "item"
+				item: "envirocore:kyronite_crystal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			dependencies: [
+				"0BAEDBAF8F711AF5"
+				"52ABD551EB767CAF"
+			]
+			id: "7D8681337B7E6DAE"
+			tasks: [{
+				id: "66FC452563FE54B2"
+				type: "item"
+				item: "envirocore:pladium_crystal"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.5d
+			dependencies: [
+				"7D8681337B7E6DAE"
+				"0B6296F5F36FB5B1"
+			]
+			id: "037C19BC82095304"
+			tasks: [{
+				id: "159DB35D11DC8169"
+				type: "item"
+				item: "envirocore:ionite_crystal"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -4.5d
+			dependencies: [
+				"037C19BC82095304"
+				"037FC5C59AC5043B"
+			]
+			id: "7269AA58D1430305"
+			tasks: [{
+				id: "488116A91970EC66"
+				type: "item"
+				item: "envirocore:aethium_crystal"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -4.5d
+			subtitle: "Can only be mined in the end"
+			description: [""]
+			dependencies: [
+				"7269AA58D1430305"
+				"2FF999994161289F"
+			]
+			id: "68A89BB5B80B1FF4"
+			tasks: [{
+				id: "3180FE6F4258F925"
+				type: "item"
+				item: "envirocore:nanorite_crystal"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -4.5d
+			subtitle: "Can only be mined in the end"
+			description: [""]
+			dependencies: [
+				"30A105C474945DBA"
+				"68A89BB5B80B1FF4"
+			]
+			id: "4A8B0672E4BCC655"
+			tasks: [{
+				id: "2DA1B01E22E70097"
+				type: "item"
+				item: "envirocore:xerothium_crystal"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			subtitle: "Used to create and improve modules and modifiers to the void miner etc."
+			dependencies: ["422CEB36918D0461"]
+			id: "5E1E8F07FBF9BF2D"
+			tasks: [{
+				id: "4F4FFFC00879C912"
+				type: "item"
+				item: "envirocore:assembler"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["422CEB36918D0461"]
+			id: "22BB4F2398A1B740"
+			tasks: [{
+				id: "13469F141A1EBAD0"
+				type: "item"
+				item: "envirocore:memory_programmer"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["5E1E8F07FBF9BF2D"]
+			id: "14EFFB8C3F57E976"
+			tasks: [{
+				id: "505EF74EF625872E"
+				type: "item"
+				item: {
+					id: "envirocore:frequency_modifier"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: ["5E1E8F07FBF9BF2D"]
+			id: "19C8027484E94BFD"
+			tasks: [{
+				id: "63CF19DEF92E50B1"
+				type: "item"
+				item: {
+					id: "envirocore:bandwidth_modifier"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Crystal miner Flash memory"
+			x: -1.5d
+			y: -4.5d
+			dependencies: ["22BB4F2398A1B740"]
+			id: "0E32E67204CE19E4"
+			tasks: [{
+				id: "7E45E0D365BD545D"
+				type: "item"
+				item: {
+					id: "envirocore:flash_memory"
+					Count: 1b
+					tag: {
+						config: {
+							color: -13243649
+							program: "envirotech:crystal"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["5E1E8F07FBF9BF2D"]
+			id: "0C820B5157052FD4"
+			tasks: [{
+				id: "5DB5E6A282940079"
+				type: "item"
+				item: {
+					id: "envirocore:fe_input"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Environmental Tech"
+			x: -3.5d
+			y: -2.5d
+			shape: "rsquare"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "422CEB36918D0461"
+			tasks: [{
+				id: "6E44EBBD9D5DA383"
+				type: "item"
+				item: "envirocore:litherite_crystal"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -8.5d
+			subtitle: "I guess you can mine with create. But should you? No"
+			dependencies: ["5B88785277B2E113"]
+			id: "303F05F67FFCAE5D"
+			tasks: [{
+				id: "522B8AE4CF954CA0"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -10.5d
+			subtitle: "Add fuel in it's inventory. Type \"refuel all\". Type \"Excavate X\" where X is a number. This makes the turtle mine out a square to bedrock with X as the length of the side. Pretty unaffective"
+			dependencies: ["5B88785277B2E113"]
+			id: "3E61DB0D869D4405"
+			tasks: [{
+				id: "5564CCD26673425C"
+				type: "item"
+				item: {
+					id: "computercraft:turtle_normal"
+					Count: 1b
+					tag: {
+						RightUpgrade: "minecraft:diamond_pickaxe"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -12.5d
+			subtitle: "You can brew potions of sight which grants you a light and fair version of X-Ray. One for every Ore"
+			dependencies: ["5B88785277B2E113"]
+			id: "655178A5170A860E"
+			tasks: [{
+				id: "7DDC6F4D1538A33B"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:coal_sight"
+					}
+				}
+			}]
+		}
+	]
+}

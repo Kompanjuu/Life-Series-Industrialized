@@ -1,0 +1,1242 @@
+{
+	id: "259128C620828652"
+	group: ""
+	order_index: 5
+	filename: "storage"
+	title: "Storage"
+	icon: "refinedstorage:controller"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Drawers"
+			x: -1.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "0D6234EA6F5814F2"
+			tasks: [{
+				id: "62F58E194D73FDD3"
+				type: "item"
+				title: "Drawers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			subtitle: "Allows for quicker storing items by only needing to click the controller to dump your inventory into near drawers. The slave extends the controller's radius."
+			dependencies: [
+				"0D6234EA6F5814F2"
+				"4A00AFA344C017E9"
+			]
+			id: "293249940EAB0D71"
+			tasks: [
+				{
+					id: "0F4477CF3729D5FB"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "34FAA6B48C91BC0B"
+					type: "item"
+					item: "storagedrawers:controller_slave"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			subtitle: "Automated compacting of items. Nuggets to Ingots to Blocks"
+			dependencies: [
+				"0D6234EA6F5814F2"
+				"4A00AFA344C017E9"
+			]
+			id: "6E4C3F8820C09673"
+			tasks: [{
+				id: "27032A822B1B5216"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["0D6234EA6F5814F2"]
+			id: "2F82A44D55C4B0D1"
+			tasks: [{
+				id: "3C5D0FBB8A46FF20"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			title: "Storage Upgrade"
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["2F82A44D55C4B0D1"]
+			id: "49E08F171A07E5F7"
+			tasks: [
+				{
+					id: "428D9C812F0D87FC"
+					type: "item"
+					item: "storagedrawers:obsidian_storage_upgrade"
+				}
+				{
+					id: "30BFE08039E095ED"
+					type: "item"
+					item: "storagedrawers:iron_storage_upgrade"
+				}
+				{
+					id: "3F4C20C8D9E10295"
+					type: "item"
+					item: "storagedrawers:gold_storage_upgrade"
+				}
+				{
+					id: "7286316AB6E22322"
+					type: "item"
+					item: "storagedrawers:diamond_storage_upgrade"
+				}
+				{
+					id: "46B1E60B5E2026B8"
+					type: "item"
+					item: "storagedrawers:emerald_storage_upgrade"
+				}
+			]
+		}
+		{
+			title: "Drawer keys"
+			x: 2.5d
+			y: 2.5d
+			dependencies: ["2F82A44D55C4B0D1"]
+			id: "0EC741C4EDC98EFD"
+			tasks: [
+				{
+					id: "73E8E155C2B374FF"
+					type: "item"
+					item: "storagedrawers:drawer_key"
+				}
+				{
+					id: "06B7C12862817F8F"
+					type: "item"
+					item: "storagedrawers:quantify_key"
+				}
+				{
+					id: "3F3ECA7062A80DF8"
+					type: "item"
+					item: "storagedrawers:shroud_key"
+				}
+			]
+		}
+		{
+			icon: "mekanism:qio_drive_array"
+			x: -1.5d
+			y: 6.5d
+			dependencies: [
+				"1C8827C29FBFD858"
+				"5B88785277B2E113"
+			]
+			id: "649172A1F5342187"
+			tasks: [
+				{
+					id: "6D2453074DBFF7CD"
+					type: "item"
+					item: "mekanism:qio_drive_array"
+				}
+				{
+					id: "21CE4B8238174337"
+					type: "item"
+					item: "mekanism:qio_dashboard"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			dependencies: ["649172A1F5342187"]
+			id: "6E1F7DA988B97C86"
+			tasks: [
+				{
+					id: "0A058A58CB964A70"
+					type: "item"
+					item: "mekanism:qio_drive_base"
+				}
+				{
+					id: "38286AFFC5E106BE"
+					type: "item"
+					item: "mekanism:qio_drive_hyper_dense"
+				}
+				{
+					id: "569DB316717E5AF4"
+					type: "item"
+					item: "mekanism:qio_drive_time_dilating"
+				}
+				{
+					id: "0A93D80B24757CD6"
+					type: "item"
+					item: "mekanism:qio_drive_supermassive"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["649172A1F5342187"]
+			id: "0117BDAE5C39E2D5"
+			tasks: [
+				{
+					id: "63AE0030FB9C3CEC"
+					type: "item"
+					item: "mekanism:qio_importer"
+				}
+				{
+					id: "5845C52380D451EF"
+					type: "item"
+					item: "mekanism:qio_exporter"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 8.5d
+			dependencies: ["649172A1F5342187"]
+			id: "66919E6E98BC98A7"
+			tasks: [{
+				id: "3B7F919D2A3EEF21"
+				type: "item"
+				item: "mekanism:portable_qio_dashboard"
+			}]
+		}
+		{
+			title: "Refined Storage"
+			x: -1.5d
+			y: 12.5d
+			shape: "rsquare"
+			dependencies: [
+				"393B8D73D632BD54"
+				"5B88785277B2E113"
+			]
+			size: 1.5d
+			id: "27D855AF53798FB6"
+			tasks: [{
+				id: "2EF74AB8A470E93B"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 23.5d
+			dependencies: ["0C576FBB81C7F6D7"]
+			id: "3C364FA7392D3C88"
+			tasks: [{
+				id: "51E274183DEF46F4"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 11.5d
+			dependencies: ["27D855AF53798FB6"]
+			id: "61E477401623727E"
+			tasks: [{
+				id: "30F95DC2F984A4FB"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+		}
+		{
+			title: "Storage Part"
+			x: 2.5d
+			y: 12.5d
+			dependencies: ["61E477401623727E"]
+			optional: true
+			id: "0BBD6E6AD0FC3FE1"
+			tasks: [
+				{
+					id: "09E2C3819F619ED5"
+					type: "item"
+					item: "refinedstorage:1k_storage_part"
+				}
+				{
+					id: "0A085BC269AC5D91"
+					type: "item"
+					item: "refinedstorage:4k_storage_part"
+				}
+				{
+					id: "0F9BFE0CC3E5D9AD"
+					type: "item"
+					item: "refinedstorage:16k_storage_part"
+				}
+				{
+					id: "16B48E823AE41EE4"
+					type: "item"
+					item: "refinedstorage:64k_storage_part"
+				}
+			]
+		}
+		{
+			title: "Fluid Storage Part"
+			x: 2.5d
+			y: 10.5d
+			dependencies: ["61E477401623727E"]
+			optional: true
+			id: "79193D1FE8403087"
+			tasks: [
+				{
+					id: "6B5313AE56975218"
+					type: "item"
+					item: "refinedstorage:64k_fluid_storage_part"
+				}
+				{
+					id: "0137C9FF915D8A2E"
+					type: "item"
+					item: "refinedstorage:256k_fluid_storage_part"
+				}
+				{
+					id: "701CC13BDBBCA9AD"
+					type: "item"
+					item: "refinedstorage:1024k_fluid_storage_part"
+				}
+				{
+					id: "3E69CA2D0B6B397E"
+					type: "item"
+					item: "refinedstorage:4096k_fluid_storage_part"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 14.5d
+			dependencies: ["00B09EB3A0A5C449"]
+			id: "5A2D3270F5B1056B"
+			tasks: [{
+				id: "51367B5E97152C07"
+				type: "item"
+				item: "refinedstorage:wireless_grid"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 13.5d
+			dependencies: ["27D855AF53798FB6"]
+			id: "67108E63AA41ADE6"
+			tasks: [{
+				id: "529CAD25A555AABD"
+				type: "item"
+				item: "refinedstorage:grid"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 12.5d
+			dependencies: ["6DEC7A5FCFAB32A7"]
+			id: "00B09EB3A0A5C449"
+			tasks: [{
+				id: "2A8B1A2B98670984"
+				type: "item"
+				item: "refinedstorage:crafting_grid"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 14.5d
+			dependencies: ["67108E63AA41ADE6"]
+			id: "14AC2A0988B0AD9B"
+			tasks: [
+				{
+					id: "5F57199AA2E1DE67"
+					type: "item"
+					item: "refinedstorage:crafter"
+				}
+				{
+					id: "2EFBBFDDDC9A660E"
+					type: "item"
+					item: "refinedstorage:crafter_manager"
+				}
+				{
+					id: "1570A23C51337D05"
+					type: "item"
+					item: "refinedstorage:pattern_grid"
+				}
+				{
+					id: "5CDB3D7A55A97E78"
+					type: "item"
+					item: "refinedstorage:pattern"
+				}
+			]
+		}
+		{
+			title: "Storage Disk"
+			x: 4.5d
+			y: 12.5d
+			dependencies: ["0BBD6E6AD0FC3FE1"]
+			optional: true
+			id: "6DEC7A5FCFAB32A7"
+			tasks: [
+				{
+					id: "67B8DE060386B295"
+					type: "item"
+					item: "refinedstorage:1k_storage_disk"
+				}
+				{
+					id: "188F358FCF299670"
+					type: "item"
+					item: "refinedstorage:4k_storage_disk"
+				}
+				{
+					id: "4A9C0EF0C2ED9995"
+					type: "item"
+					item: "refinedstorage:16k_storage_disk"
+				}
+				{
+					id: "582C4D51C99D3A83"
+					type: "item"
+					item: "refinedstorage:64k_storage_disk"
+				}
+			]
+		}
+		{
+			title: "Fluid Storage Disk"
+			x: 4.5d
+			y: 10.5d
+			dependencies: ["79193D1FE8403087"]
+			optional: true
+			id: "4CA702041A16AF95"
+			tasks: [
+				{
+					id: "5EA74038BA257AAC"
+					type: "item"
+					item: "refinedstorage:64k_fluid_storage_disk"
+				}
+				{
+					id: "0C7E536BFE2C8E8A"
+					type: "item"
+					item: "refinedstorage:256k_fluid_storage_disk"
+				}
+				{
+					id: "7FD3CDACE568CEBD"
+					type: "item"
+					item: "refinedstorage:1024k_fluid_storage_disk"
+				}
+				{
+					id: "0CFF2894436842FB"
+					type: "item"
+					item: "refinedstorage:4096k_fluid_storage_disk"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 10.5d
+			dependencies: ["4CA702041A16AF95"]
+			id: "1C3904D0A954CE5B"
+			tasks: [{
+				id: "4353DB8B767A42F9"
+				type: "item"
+				item: "refinedstorage:fluid_grid"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 10.5d
+			dependencies: ["1C3904D0A954CE5B"]
+			id: "6CF9F49E83BE4414"
+			tasks: [{
+				id: "4CE56F5146341840"
+				type: "item"
+				item: "refinedstorage:wireless_fluid_grid"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 12.5d
+			dependencies: ["00B09EB3A0A5C449"]
+			id: "723A3AA414AA2898"
+			tasks: [{
+				id: "0256DFB410BD041E"
+				type: "item"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 16.5d
+			dependencies: ["27D855AF53798FB6"]
+			id: "7A88724A7B673DB5"
+			tasks: [{
+				id: "7B638C04C9D302C7"
+				type: "item"
+				item: "refinedstorage:cable"
+			}]
+		}
+		{
+			title: "I/O"
+			x: 2.5d
+			y: 16.5d
+			dependencies: ["7A88724A7B673DB5"]
+			optional: true
+			id: "36FEBD4324DB09B1"
+			tasks: [
+				{
+					id: "2296FA313F299F66"
+					type: "item"
+					item: "refinedstorage:importer"
+				}
+				{
+					id: "4FA64F16FE3DC980"
+					type: "item"
+					item: "refinedstorage:exporter"
+				}
+			]
+		}
+		{
+			title: "Applied Energistics 2"
+			x: -1.5d
+			y: 23.5d
+			shape: "rsquare"
+			subtitle: "Found in meteors. Needed to advance further"
+			dependencies: [
+				"0AE0C0E474F0C126"
+				"5B88785277B2E113"
+			]
+			size: 1.5d
+			id: "3AF0A651A96C3CC7"
+			tasks: [
+				{
+					id: "6061B480DCB7E5D1"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor_press"
+				}
+				{
+					id: "70FE227AA425764B"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor_press"
+				}
+				{
+					id: "3F304F2A961B8FDE"
+					type: "item"
+					item: "appliedenergistics2:logic_processor_press"
+				}
+				{
+					id: "0B1F1BDA86931689"
+					type: "item"
+					item: "appliedenergistics2:silicon_press"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 23.5d
+			dependencies: ["3AF0A651A96C3CC7"]
+			id: "0C576FBB81C7F6D7"
+			tasks: [{
+				id: "79B7FE7AE49EB581"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 23.5d
+			dependencies: ["3C364FA7392D3C88"]
+			id: "0A381FB7B4A7ABC2"
+			tasks: [{
+				id: "70803872D8CFF9F7"
+				type: "item"
+				item: "appliedenergistics2:drive"
+			}]
+		}
+		{
+			title: "ME Storage Component"
+			x: 6.5d
+			y: 24.5d
+			dependencies: ["0A381FB7B4A7ABC2"]
+			optional: true
+			id: "36018B984C03D0EA"
+			tasks: [
+				{
+					id: "0E1CC771C8CE23FF"
+					type: "item"
+					item: "appliedenergistics2:1k_cell_component"
+				}
+				{
+					id: "24A14C495DFB4C1C"
+					type: "item"
+					item: "appliedenergistics2:4k_cell_component"
+				}
+				{
+					id: "10E96C446E1FB354"
+					type: "item"
+					item: "appliedenergistics2:16k_cell_component"
+				}
+				{
+					id: "0839CC080A561B1B"
+					type: "item"
+					item: "appliedenergistics2:64k_cell_component"
+				}
+			]
+		}
+		{
+			title: "ME Storage Cell"
+			x: 8.5d
+			y: 24.5d
+			dependencies: ["36018B984C03D0EA"]
+			optional: true
+			id: "0D9C7A6F186F97F5"
+			tasks: [
+				{
+					id: "25A6A8B4990DE812"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:1k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3B1042D56F134A0C"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:4k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "40E0D000FB7BC5F1"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:16k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "341D44B99AD6FEF8"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:64k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "ME Fluid Storage Cell"
+			x: 8.5d
+			y: 22.5d
+			dependencies: ["77F889606F8A2060"]
+			optional: true
+			id: "01978DD7C31B8F87"
+			tasks: [
+				{
+					id: "68128BD999CA70C9"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:1k_fluid_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "0DCC85423C821248"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:4k_fluid_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7B33690E6760A2D1"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:16k_fluid_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3F77FB64D5DBFA68"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:64k_fluid_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "ME Fluid Storage Cell"
+			x: 6.5d
+			y: 22.5d
+			dependencies: ["0A381FB7B4A7ABC2"]
+			optional: true
+			id: "77F889606F8A2060"
+			tasks: [
+				{
+					id: "543D98732FD9B3F1"
+					type: "item"
+					item: "appliedenergistics2:1k_fluid_cell_component"
+				}
+				{
+					id: "591542A1F8B01F5C"
+					type: "item"
+					item: "appliedenergistics2:4k_fluid_cell_component"
+				}
+				{
+					id: "451CE5C41444CCB7"
+					type: "item"
+					item: "appliedenergistics2:16k_fluid_cell_component"
+				}
+				{
+					id: "4A72BDFBE170669C"
+					type: "item"
+					item: "appliedenergistics2:64k_fluid_cell_component"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 25.5d
+			dependencies: ["3C364FA7392D3C88"]
+			id: "7385B48FB36CA463"
+			tasks: [{
+				id: "4D0364DF2B41AE55"
+				type: "item"
+				item: "appliedenergistics2:terminal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 26.5d
+			dependencies: ["7385B48FB36CA463"]
+			id: "15B79B57F7FF60A8"
+			tasks: [{
+				id: "6EB597BABFA7FD10"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 27.5d
+			dependencies: ["7385B48FB36CA463"]
+			id: "10796D8C8C7B285D"
+			tasks: [{
+				id: "1CE81E6ED889F831"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:wireless_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 28.5d
+			dependencies: [
+				"10796D8C8C7B285D"
+				"15B79B57F7FF60A8"
+			]
+			id: "7DE1E0AF09802992"
+			tasks: [{
+				id: "1024E3A9022D769F"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_crafting_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 25.5d
+			dependencies: ["3C364FA7392D3C88"]
+			id: "03C5B850907B59E0"
+			tasks: [{
+				id: "3FDE5A4E5090D0A8"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 19.5d
+			dependencies: ["27D855AF53798FB6"]
+			id: "3D250DDBCD9CD773"
+			tasks: [{
+				id: "26AA314CB4FC9CF6"
+				type: "item"
+				item: "refinedstorage:upgrade"
+			}]
+		}
+		{
+			title: "Speed Upgrades"
+			x: 2.5d
+			y: 18.5d
+			dependencies: ["3D250DDBCD9CD773"]
+			id: "26BE493E52FAA8F7"
+			tasks: [
+				{
+					id: "7C951BD4BC71BBFB"
+					type: "item"
+					item: "refinedstorage:speed_upgrade"
+				}
+				{
+					id: "32D022B93821F907"
+					type: "item"
+					item: "refinedstorage:stack_upgrade"
+				}
+			]
+		}
+		{
+			title: "Other Upgrades"
+			x: 2.5d
+			y: 20.5d
+			dependencies: ["3D250DDBCD9CD773"]
+			id: "3B2426289A7BFE0E"
+			tasks: [
+				{
+					id: "44CD44A60DA2BDF1"
+					type: "item"
+					item: "refinedstorage:range_upgrade"
+				}
+				{
+					id: "4C908DF86A69DA14"
+					type: "item"
+					item: "refinedstorage:crafting_upgrade"
+				}
+			]
+		}
+		{
+			title: "Wood Colossal Chest"
+			x: -1.5d
+			y: -4.5d
+			shape: "rsquare"
+			subtitle: "Build a hollow 2x2, 3x3, 4x4... with one of the blocks replaced with a core."
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			optional: true
+			id: "45708551FB321A0C"
+			tasks: [
+				{
+					id: "01A58A84D4099025"
+					type: "item"
+					item: "colossalchests:chest_wall_wood"
+				}
+				{
+					id: "179336850CA61B63"
+					type: "item"
+					item: "colossalchests:colossal_chest_wood"
+				}
+				{
+					id: "579D9560D3724F9B"
+					type: "item"
+					item: "colossalchests:interface_wood"
+				}
+			]
+		}
+		{
+			title: "Copper Colossal Chest"
+			x: 0.5d
+			y: -4.5d
+			dependencies: ["45708551FB321A0C"]
+			optional: true
+			id: "46391441CD69EC5D"
+			tasks: [
+				{
+					id: "315EFA6A5039C260"
+					type: "item"
+					item: "colossalchests:chest_wall_copper"
+				}
+				{
+					id: "5A5636D4A487C399"
+					type: "item"
+					item: "colossalchests:colossal_chest_copper"
+				}
+				{
+					id: "04D5AED71A459B27"
+					type: "item"
+					item: "colossalchests:interface_copper"
+				}
+			]
+		}
+		{
+			title: "Iron Colossal Chest"
+			x: 2.5d
+			y: -4.5d
+			dependencies: ["46391441CD69EC5D"]
+			optional: true
+			id: "3421ABDA0CF96543"
+			tasks: [
+				{
+					id: "0663A870356D9046"
+					type: "item"
+					item: "colossalchests:chest_wall_iron"
+				}
+				{
+					id: "1D4AE8A290F61FC2"
+					type: "item"
+					item: "colossalchests:colossal_chest_iron"
+				}
+				{
+					id: "3D7C7391255BC8AF"
+					type: "item"
+					item: "colossalchests:interface_iron"
+				}
+			]
+		}
+		{
+			title: "Silver Colossal Chest"
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["3421ABDA0CF96543"]
+			optional: true
+			id: "79C4B917DDA88645"
+			tasks: [
+				{
+					id: "5CCB9705E8BE4596"
+					type: "item"
+					item: "colossalchests:chest_wall_silver"
+				}
+				{
+					id: "557F7540FA65B46D"
+					type: "item"
+					item: "colossalchests:colossal_chest_silver"
+				}
+				{
+					id: "2F6C9110CA90C4F1"
+					type: "item"
+					item: "colossalchests:interface_silver"
+				}
+			]
+		}
+		{
+			title: "Gold Colossal Chest"
+			x: 6.5d
+			y: -4.5d
+			dependencies: ["79C4B917DDA88645"]
+			optional: true
+			id: "2A703F7ACDFC85A6"
+			tasks: [
+				{
+					id: "118DF39B6852AC6E"
+					type: "item"
+					item: "colossalchests:chest_wall_gold"
+				}
+				{
+					id: "482468C7575BBD7D"
+					type: "item"
+					item: "colossalchests:colossal_chest_gold"
+				}
+				{
+					id: "3F2D4CED3A0A6ECA"
+					type: "item"
+					item: "colossalchests:interface_gold"
+				}
+			]
+		}
+		{
+			title: "Diamond Colossal Chest"
+			x: 8.5d
+			y: -4.5d
+			dependencies: ["2A703F7ACDFC85A6"]
+			optional: true
+			id: "562B2377B1AE7523"
+			tasks: [
+				{
+					id: "27C93E4884B6E8AA"
+					type: "item"
+					item: "colossalchests:chest_wall_diamond"
+				}
+				{
+					id: "606366CFD4B2FA72"
+					type: "item"
+					item: "colossalchests:colossal_chest_diamond"
+				}
+				{
+					id: "3399762D082FAE17"
+					type: "item"
+					item: "colossalchests:interface_diamond"
+				}
+			]
+		}
+		{
+			title: "Obsidian Colossal Chest"
+			x: 10.5d
+			y: -4.5d
+			dependencies: ["562B2377B1AE7523"]
+			optional: true
+			id: "312439057BF62918"
+			tasks: [
+				{
+					id: "4F2694FE553FB3FA"
+					type: "item"
+					item: "colossalchests:chest_wall_obsidian"
+				}
+				{
+					id: "65FA359EA35F5573"
+					type: "item"
+					item: "colossalchests:colossal_chest_obsidian"
+				}
+				{
+					id: "042198CB8017D8C5"
+					type: "item"
+					item: "colossalchests:interface_obsidian"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -6.5d
+			dependencies: [
+				"27B03901B47C9BD7"
+				"5B88785277B2E113"
+			]
+			id: "194E48A7F89E61E1"
+			tasks: [{
+				id: "786F5AC478CD29D0"
+				type: "item"
+				item: "immersiveengineering:silo"
+			}]
+		}
+		{
+			title: "Simple Storage Network"
+			x: -1.5d
+			y: 34.5d
+			shape: "rsquare"
+			dependencies: [
+				"3D46E4AC60F06E28"
+				"5B88785277B2E113"
+			]
+			size: 1.5d
+			id: "6B21E8F1AC4A6FF9"
+			tasks: [{
+				id: "086F89B7094FDC14"
+				type: "item"
+				item: "storagenetwork:master"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 32.5d
+			dependencies: ["6B21E8F1AC4A6FF9"]
+			id: "1AEA4DB8DD1F3947"
+			tasks: [{
+				id: "1B44A59325E02E1E"
+				type: "item"
+				item: "storagenetwork:kabel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 32.5d
+			subtitle: "Used to connect inventories to the storage network. Pretty OP"
+			dependencies: ["1AEA4DB8DD1F3947"]
+			id: "45357B36E6A71AAA"
+			tasks: [{
+				id: "40A868705A0C3C7C"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 30.5d
+			dependencies: ["1AEA4DB8DD1F3947"]
+			id: "4595272EE0A1D2D6"
+			tasks: [
+				{
+					id: "37F10BA1CA579DC9"
+					type: "item"
+					item: "storagenetwork:import_kabel"
+				}
+				{
+					id: "34085687399B3460"
+					type: "item"
+					item: "storagenetwork:filter_kabel"
+				}
+				{
+					id: "568975706499FEB6"
+					type: "item"
+					item: "storagenetwork:import_filter_kabel"
+				}
+				{
+					id: "683063577675DF1E"
+					type: "item"
+					item: "storagenetwork:export_kabel"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 34.5d
+			dependencies: ["302F78ABB8B39A1A"]
+			id: "090EC2807328EEB7"
+			tasks: [{
+				id: "0F117CF3C1BEB16F"
+				type: "item"
+				item: "storagenetwork:request"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 34.5d
+			dependencies: ["6B21E8F1AC4A6FF9"]
+			id: "302F78ABB8B39A1A"
+			tasks: [{
+				id: "5AA62B2ED7F984EE"
+				type: "item"
+				item: "storagenetwork:inventory"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 36.5d
+			dependencies: ["6B21E8F1AC4A6FF9"]
+			id: "74BCC9AC2DA0ABE2"
+			tasks: [{
+				id: "5765542006965284"
+				type: "item"
+				item: "storagenetwork:inventory_remote"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 36.5d
+			dependencies: ["74BCC9AC2DA0ABE2"]
+			id: "7489D181BD6E0833"
+			tasks: [{
+				id: "689253EE3A45B6C2"
+				type: "item"
+				item: "storagenetwork:crafting_remote"
+			}]
+		}
+		{
+			title: "More Remotes"
+			x: 0.5d
+			y: 38.5d
+			dependencies: ["74BCC9AC2DA0ABE2"]
+			id: "41168949EA515D7D"
+			tasks: [
+				{
+					id: "32F809C8F9E8D871"
+					type: "item"
+					item: "storagenetwork:picker_remote"
+				}
+				{
+					id: "1E22DDACA7718CF1"
+					type: "item"
+					item: "storagenetwork:collector_remote"
+				}
+				{
+					id: "73C5640ED5C9452C"
+					type: "item"
+					item: "storagenetwork:builder_remote"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 30.5d
+			dependencies: ["1AEA4DB8DD1F3947"]
+			id: "4A2A386A875B54A8"
+			tasks: [
+				{
+					id: "73884C9D4A2EC523"
+					type: "item"
+					item: "storagenetwork:speed_upgrade"
+				}
+				{
+					id: "51BB54637E34B43E"
+					type: "item"
+					item: "storagenetwork:stack_upgrade"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -8.5d
+			dependencies: ["5B88785277B2E113"]
+			id: "79C9F7EC4BE5BD5E"
+			tasks: [{
+				id: "1163C3258DA7C190"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -8.5d
+			dependencies: ["72259FF0FE63FFC3"]
+			id: "0C8DE76F8A615683"
+			tasks: [{
+				id: "4834D19A00C02CE2"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			title: "Simply backpacks"
+			x: -1.5d
+			y: -10.5d
+			shape: "rsquare"
+			dependencies: ["5B88785277B2E113"]
+			size: 1.5d
+			id: "797D8D4ED56A0E0E"
+			tasks: [{
+				id: "2A3BBCF9B97024E3"
+				type: "item"
+				item: "simplybackpacks:commonbackpack"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -10.5d
+			dependencies: ["797D8D4ED56A0E0E"]
+			id: "72259FF0FE63FFC3"
+			tasks: [{
+				id: "6519A19C30929501"
+				type: "item"
+				item: "simplybackpacks:uncommonbackpack"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -10.5d
+			dependencies: ["72259FF0FE63FFC3"]
+			id: "5791F1495D6BF4A2"
+			tasks: [{
+				id: "6954605396798CB3"
+				type: "item"
+				item: "simplybackpacks:rarebackpack"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -10.5d
+			dependencies: ["5791F1495D6BF4A2"]
+			id: "372661EFBED037C2"
+			tasks: [{
+				id: "10255EF5D90B229B"
+				type: "item"
+				item: "simplybackpacks:epicbackpack"
+			}]
+		}
+	]
+}

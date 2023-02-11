@@ -1,0 +1,200 @@
+{
+	id: "516644E0D5CBBEC1"
+	group: "2FB951217AFBB7A1"
+	order_index: 2
+	filename: "induction_cells"
+	title: "Induction Cells"
+	icon: "mekanism:ultimate_induction_cell"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Thermal Evaporation Plant"
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["3EDF3A28786CE5BF"]
+			id: "4E78BCA28F522B2B"
+			tasks: [
+				{
+					id: "315E9625CF4C15C5"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+				{
+					id: "792FA0A9B2365C19"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+					count: 31L
+				}
+			]
+		}
+		{
+			title: "Brine"
+			x: 3.0d
+			y: -1.0d
+			dependencies: ["4E78BCA28F522B2B"]
+			id: "09D7352C717F576C"
+			tasks: [{
+				id: "2FA19E5BC23232CE"
+				type: "item"
+				item: "mekanism:brine_bucket"
+			}]
+		}
+		{
+			title: "Liquid Lithium"
+			x: 5.0d
+			y: -1.0d
+			dependencies: [
+				"4E78BCA28F522B2B"
+				"09D7352C717F576C"
+			]
+			id: "4B4EB52492F2605F"
+			tasks: [{
+				id: "7D75EEC0B90BEFFB"
+				type: "item"
+				item: "mekanism:lithium_bucket"
+			}]
+		}
+		{
+			title: "Lithium"
+			x: 7.0d
+			y: -1.0d
+			dependencies: [
+				"7649D1785634DB22"
+				"4B4EB52492F2605F"
+			]
+			id: "38E631543912A63B"
+			tasks: [{
+				id: "71FF24093C42363D"
+				type: "item"
+				item: "mekanism:lithium_bucket"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.0d
+			dependencies: [
+				"38E631543912A63B"
+				"089115DBBE7BE373"
+			]
+			id: "766AD6120E19B2C2"
+			tasks: [{
+				id: "73E9088C3ED0ACF9"
+				type: "item"
+				item: "mekanism:dust_lithium"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			subtitle: "With induction cells you can store enourmous amounts of energy."
+			dependencies: ["766AD6120E19B2C2"]
+			id: "5369A559A18BAF72"
+			tasks: [{
+				id: "26993F833F16C1AB"
+				type: "item"
+				item: "mekanism:induction_casing"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			dependencies: ["5369A559A18BAF72"]
+			id: "57AAE0B03CB999A1"
+			tasks: [{
+				id: "59D464449DD49A39"
+				type: "item"
+				item: "mekanism:induction_port"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 1.0d
+			dependencies: ["5369A559A18BAF72"]
+			id: "096A26D6DC2AC09B"
+			tasks: [
+				{
+					id: "3DED98A8369A78FF"
+					type: "item"
+					item: "mekanism:basic_induction_cell"
+				}
+				{
+					id: "2422D29D4DFCEF9C"
+					type: "item"
+					item: "mekanism:advanced_induction_cell"
+				}
+				{
+					id: "5438D1B2B202CB11"
+					type: "item"
+					item: "mekanism:elite_induction_cell"
+				}
+				{
+					id: "6DE24525A5450626"
+					type: "item"
+					item: "mekanism:ultimate_induction_cell"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 3.0d
+			dependencies: ["57AAE0B03CB999A1"]
+			id: "2D2D75ACE4C648F5"
+			tasks: [
+				{
+					id: "295FBE117F926D17"
+					type: "item"
+					item: "mekanism:basic_induction_provider"
+				}
+				{
+					id: "68B5071810019EF3"
+					type: "item"
+					item: "mekanism:advanced_induction_provider"
+				}
+				{
+					id: "0AA417C5C6B7673F"
+					type: "item"
+					item: "mekanism:elite_induction_provider"
+				}
+				{
+					id: "781A2E294171A2F7"
+					type: "item"
+					item: "mekanism:ultimate_induction_provider"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			dependencies: ["3B69D05DA3D84743"]
+			id: "7649D1785634DB22"
+			tasks: [{
+				id: "3D369E489E3F9B18"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -1.0d
+			dependencies: ["1F4EB8680E4C5F1C"]
+			id: "089115DBBE7BE373"
+			tasks: [{
+				id: "043BA661DC220C6C"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+		}
+		{
+			title: "Reactor Core"
+			icon: "kubejs:reactor_core"
+			x: 13.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Go back to the Main quest Line"
+			dependencies: ["096A26D6DC2AC09B"]
+			id: "38433C8D57A24307"
+		}
+	]
+}
