@@ -1,4 +1,6 @@
 1.0.1
+   Additions
+      Added changelog file
    Mods
       Added Corpse
       Removed Default World Type
@@ -10,6 +12,8 @@
       Updated Supermartijn642's core lib to 1.1.2
    Changes
       Changed config in forge-common
+      Edited the start menu
+      Fixed better compatibility settings
 1.0.0
    The first official version of Life Series: Industrialized!
    This build should be completely bug free.
