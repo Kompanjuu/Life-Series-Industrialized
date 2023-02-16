@@ -27,7 +27,7 @@ Beware that these rules can create in real life dramas!
 The mod FTBteams exist. I cannot remove this mod but please make sure that this mod isn't used. The mod disables friendly fire, which is bad if someone switches alliances or spies on another team.
 
 The server file (will later) contain a small guide on how to set up your server with all configuration settings.
-##Mods
+## Mods
 This modpack currently contain 256 mods. It may sound like a lot. But the performance is still quite good. 4Gb+ RAM is recommended. How to adjust RAM: https://www.youtube.com/watch?v=uZpG9WnxoM8
 
 Note that the following lists only contain the biggest mods in each category. There are also many smaller mods included, which you can find in the full mod list.
