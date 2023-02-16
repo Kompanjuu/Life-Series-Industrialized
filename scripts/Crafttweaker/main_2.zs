@@ -1082,3 +1082,8 @@ function removeMekanismProcessingAll(basename as string, type as string) as int 
                     [<item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>],
                     [<item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>, <item:envirocore:nanorite_crystal>],
                 ]);
+#
+
+for modifierName in loot.modifiers.getAllNames() {
+    print(modifierName);
+}

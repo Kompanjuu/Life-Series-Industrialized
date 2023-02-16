@@ -35,14 +35,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
-  orientation = mid-centered
-  x = 104
-  action = movebutton
-  y = 17
-}
-
-customization {
   identifier = %id=376322%
   orientation = mid-centered
   x = -124
@@ -51,23 +43,9 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  orientation = mid-centered
-  x = -100
-  action = movebutton
-  y = 18
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  action = sethoverlabel
-  label = Not good enough?
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   orientation = mid-centered
-  x = 0
+  x = 2
   action = movebutton
   y = 17
 }
@@ -76,14 +54,6 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   action = sethoverlabel
   label = Already?
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
-  orientation = mid-centered
-  x = -124
-  action = movebutton
-  y = 17
 }
 
 customization {
@@ -108,6 +78,41 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = mid-centered
+  x = 104
+  action = movebutton
+  y = 17
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 17
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = sethoverlabel
+  label = Not good enough?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 17
+}
+
+customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
   x = -100
@@ -126,11 +131,6 @@ customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   action = sethoverlabel
   label = List go brrrr
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
-  action = hidebutton
 }
 
 customization {
@@ -310,11 +310,11 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = opencustomgui
-  x = -47
-  width = 40
+  x = -57
+  width = 50
   actionid = bfdd36ce-38c0-43ab-8368-391c43d4e2861668448537212
   action = addbutton
-  y = -172
+  y = -196
   label = Credits
   value = Credits
   height = 20
@@ -329,5 +329,20 @@ customization {
   actionid = 2d3fa585-e1c0-429a-a0e0-1fa25514ce6c1674143869865
   y = -123
   height = 100
+}
+
+customization {
+  orientation = bottom-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openfile
+  x = -107
+  width = 100
+  actionid = d8a8137b-a4f4-4e85-b037-8109ff0253cf1676564177308
+  action = addbutton
+  y = -172
+  label = Changelog
+  value = changelog.txt
+  height = 20
 }
 
